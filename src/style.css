@@ -1,31 +1,53 @@
-.container {
-    position: relative;
-    width: 200px;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+.Logoname_contaier{
+
+  display:flex;
+ 
+  align-items: "center";
+  margin: 20px;
   
-  .toggle-btn {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
   
-  .sidebar {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 200px;
-    background-color: gray;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transform: translateX(-110%);
-    transition: transform 0.3s ease-in-out;
-  }
+}
+.Logoname_contaier_1{
+  display: flex;
+  gap: 20px;
+  align-items: center;
   
-  .sidebar.open {
-    transform: translateX(0);
-  }
+  width: 100%;
   
+}
+.Logoname_contaier_2{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  
+  
+  
+}
+.schoolname{
+  font-size: 20px;
+  
+}
+.Login-container_1{
+ 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.Login-container{
+  background-color:white;
+  height: 290px;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
