@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    width: 200px;
+  }
+  
+  .toggle-btn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
