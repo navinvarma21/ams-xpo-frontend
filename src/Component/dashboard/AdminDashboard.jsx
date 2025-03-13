@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../one_time_use_component/Header";
 import SideNavbar from "../one_time_use_component/Side_Navbar";
 import Footer from "../one_time_use_component/Footer";
-import AddStudent from "../AddStudent";
+
 import Add_Subject_Details from "../pages/AdminDashboard/Add_Subject_Details";
 
 export default function AdminDashboard() {
