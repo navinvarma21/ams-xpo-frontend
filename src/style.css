@@ -1,53 +1,186 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  position: relative;
   font-family: "Inter", sans-serif;
+  position: relative;
 }
-.Logoname_contaier{
 
-  display:flex;
- 
+/*Login page*/
+
+.Logoname_contaier {
+  display: flex;
+
   align-items: "center";
   margin: 20px;
-  
-  
 }
-.Logoname_contaier_1{
+.Logoname_contaier_1 {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
-  
+
   width: 100%;
-  
 }
-.Logoname_contaier_2{
+.Logoname_contaier_2 {
   display: flex;
   width: 40%;
   align-items: center;
-  
-  
-  
 }
-.schoolname{
+.schoolname {
   font-size: 20px;
   
 }
-.Login-container_1{
- 
+.schoolname1{
   
+  font-size: 20px;
+}
+.Login-container_1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 35px;
   flex-direction: column;
-  gap: 20px;
-  
+  gap: 10px;
 }
-.Login-container{
-  background-color:white;
-  height: 290px;
+.Login-container {
+  background-color: white;
+  height: 310px;
   width: 300px;
   border-radius: 30px;
   border: 1px solid black;
 }
+
+.Logoname_contaier_3 {
+  position: absolute;
+  font-weight: 500;
+  margin-top: 37%;
+  margin-left: 15px;
+}
+.full-container {
+  position: relative;
+}
+.input {
+
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid black;
+  text-align: center;
+
+}
+.btn{
+  padding: 10px;
+  width: 70px;
+  background-color: #A5C2E0;
+  box-shadow: none !important;
+  outline: none !important;
+  border:none;
+  border-radius: 5px;
+  font-size: medium;
+  
+}
+
+.btn-1{
+  padding: 10px;
+  width: 70px;
+  background-color:#22C55E;
+  box-shadow: none !important;
+  outline: none !important;
+  border:none;
+  border-radius: 5px;
+  font-size: medium;
+  color: white;
+  
+}
+
+/* Header */
+
+.Header-Contaier-Navbar {
+  display: flex;
+
+  align-items: "center";
+  margin: 20px;
+}
+.Header-Contaier-Navbar-start {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+  width: 100%;
+}
+.Header-Contaier-Navbar-end {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+.Header-Contaier-Navbar-end-1{
+
+  padding-right: 20px;
+  font-weight:600;
+
+}
+.Header-Container{
+  border-bottom: 1px solid #D1D0D0;
+}
+
+/* side navbar */
+
+.side-navbar-container{
+
+  width: 20%;
+  height: 80vh;
+  border-right:1px solid #D1D0D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.Footer-container {
+  position: absolute;
+  font-weight: 500;
+  margin-top: 1%;
+  margin-left: 15px;
+}
+.side-Navbar-container-heading{
+
+  padding: 20px;
+  
+  height: 10px;
+  display: flex;
+  margin-top: 20px;
+  border:1px solid black;
+  box-shadow: none !important;
+  outline: none !important;
+  align-items: center;
+  /* justify-content: center; */
+  border-radius: 10px;
+  width: 100%;
+  
+  
+}
+.side-Navbar-container-heading:hover{
+
+  cursor: pointer;
+
+}
+.side-Navbar-container-heading-container{
+  position: relative;
+  bottom: 10%;
+  right: 72px;
+
+}
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes left padding */
+  margin: 0; /* Removes margin */
+}
+
+.dropdown-menu {
+  list-style-type: none; /* Removes bullet points from the dropdown menu */
+  padding-left: 0; /* Removes left padding */
+  margin: 0; /* Removes margin */
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../AuthService"; // Import login function
+import Footer from "../../one_time_use_component/Footer";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -26,7 +27,7 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div className="full-container">
       <div className="Logoname_contaier">
         <div className="Logoname_contaier_1">
           <p>Logo</p>
@@ -34,7 +35,7 @@ const Login = () => {
         </div>
 
         <div className="Logoname_contaier_2">
-          <p className="schoolname">ACADEMIC MANAGEMENT SYSTEM</p>
+          <p className="schoolname1">ACADEMIC MANAGEMENT SYSTEM</p>
         </div>
       </div>
       <div
@@ -56,8 +57,11 @@ const Login = () => {
         <div className="Login-container">
           {error && <p style={{ color: "red" }}>{error}</p>}
 
+
           <form className="Login-container_1" onSubmit={handleSubmit}>
-            <select name="role" required className="input">
+
+            <h4>Select Roll:</h4>
+            <select name="role" required className="input" style={{width:"67%"}}>
               <option value="" disabled selected>
                 Select Role
               </option>
@@ -65,6 +69,7 @@ const Login = () => {
               <option value="teacher">Teacher</option>
               <option value="student">Student</option>
               <option value="parent">Parent</option>
+              
             </select>
 
             <input
@@ -83,11 +88,18 @@ const Login = () => {
               required
               className="input"
             />
-            <button type="submit">Login</button>
+            <button type="submit" className="btn">Login</button>
+
+            <p onClick={() => navigate("/register")}
+             style={{color:"#22C55E",cursor: "pointer"}}>Create Authentication</p>
+           
           </form>
         </div>
       </div>
-    </>
+      <footer className="Logoname_contaier_3">
+        <p>XPO MEDIA Software Division</p>
+      </footer>
+    </div>
   );
 };
 

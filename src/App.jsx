@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import ErrorBoundary from "./ErrorBoundary";
 
 
-import ProtectedRoute from "./Component/Auth/Auth_pages/ProtectedRoute";
+
+
 
 
 
@@ -12,22 +12,56 @@ import AdminDashboard from "./Component/dashboard/AdminDashboard";
 import TeacherDashboard from "./Component/dashboard/TeacherDashboard";
 import StudentDashboard from "./Component/dashboard/StudentDashboard";
 import ParentDashboard from "./Component/dashboard/ParentDashboard";
-import Unauthorized from "./Component/dashboard/Unauthorized";
+
+import Register from "./Component/Auth/Auth_pages/Register";
 
 function App() {
   return (
-    <ErrorBoundary>
+    
     <Router>
       <Routes>
+
+        {/*Admin*/}
         <Route path="/login" element={<Login/>} />
-        <Route path="/unauthorized" element={<Unauthorized />} />
-        <Route path="/admin" element={<ProtectedRoute role="admin"><AdminDashboard/></ProtectedRoute>} />
-        <Route path="/teacher" element={<ProtectedRoute role="teacher"><TeacherDashboard /></ProtectedRoute>} />
-        <Route path="/student" element={<ProtectedRoute role="student">< StudentDashboard/></ProtectedRoute>} />
-        <Route path="/parent" element={<ProtectedRoute role="parent"><ParentDashboard /></ProtectedRoute>} />
+       
+        <Route path="/admin" element={<AdminDashboard/>} />
+       
+        <Route path="/register" element={<Register/>} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Route path="/teacher" element={<TeacherDashboard />} />
+        <Route path="/student" element={< StudentDashboard/>} />
+        <Route path="/parent" element={<ParentDashboard />} />
       </Routes>
     </Router>
-    </ErrorBoundary>
+    
   );
 }
 
