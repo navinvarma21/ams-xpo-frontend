@@ -463,59 +463,9 @@ export default function Subject_and_Grades_10to12() {
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "10%",
-                        }}
-                      ></td>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "45%",
-                        }}
-                      >
-                        <input
-                          type="text"
-                          placeholder="Total"
-                          style={{
-                            width: "95%",
-                            padding: "2px",
-                            fontSize: "12px",
-                            boxSizing: "border-box",
-                          }}
-                        />
-                      </td>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "45%",
-                        }}
-                      >
-                        <input
-                          type="number"
-                          placeholder="Status"
-                          style={{
-                            width: "95%",
-                            padding: "2px",
-                            fontSize: "12px",
-                            boxSizing: "border-box",
-                          }}
-                        />
-                      </td>
-                    </tr>
+                  
                   </tbody>
-                  {/* <button
-                    type="button" // Changed to "button" for handling click
-                    className="C-C-C-btn-SG"
-                    onClick={() => setViewMode(true)} // Toggle to View_Attendance
-                  >
-                    Submit
-                  </button> */}
+                  
                 </table>
               </div>
             </div>
@@ -564,7 +514,7 @@ export default function Subject_and_Grades_10to12() {
                           width: "45%",
                         }}
                       >
-                        Subject Name
+                        Practical Name
                       </td>
                       <td
                         style={{
@@ -812,53 +762,7 @@ export default function Subject_and_Grades_10to12() {
                         />
                       </td>
                     </tr>
-                    <tr>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "10%",
-                        }}
-                      >
-                        6
-                      </td>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "45%",
-                        }}
-                      >
-                        <input
-                          type="text"
-                          placeholder="Subject Name"
-                          style={{
-                            width: "95%",
-                            padding: "2px",
-                            fontSize: "12px",
-                            boxSizing: "border-box",
-                          }}
-                        />
-                      </td>
-                      <td
-                        style={{
-                          border: "1px solid #000",
-                          padding: "4px",
-                          width: "45%",
-                        }}
-                      >
-                        <input
-                          type="number"
-                          placeholder="Marks"
-                          style={{
-                            width: "95%",
-                            padding: "2px",
-                            fontSize: "12px",
-                            boxSizing: "border-box",
-                          }}
-                        />
-                      </td>
-                    </tr>
+                    
                     <tr>
                       <td
                         style={{
