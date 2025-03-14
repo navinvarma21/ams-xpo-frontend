@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Header from "../one_time_use_component/Header";
 import SideNavbar from "../one_time_use_component/Side_Navbar";
-import Footer from "../one_time_use_component/Footer";
+
 
 import Add_Subject_Details from "../pages/AdminDashboard/Add_Subject_Details";
 import Attendane from "../pages/AdminDashboard/Attendane";
 import View_Attendance from "../pages/AdminDashboard/View_Attendance";
 import Subject_and_Grades from "../pages/AdminDashboard/Subject_and_Grades_1to9";
 import Subject_and_Grades_10to12 from "../pages/AdminDashboard/Subject_and_Grades_10to12";
+import Mainmenu from "../pages/AdminDashboard/Mainmenu";
 
 export default function AdminDashboard() {
   const [activeComponent, setActiveComponent] = useState(null); // State to manage the active component
@@ -31,7 +32,7 @@ export default function AdminDashboard() {
         return <Subject_and_Grades_10to12/>;
 
       default:
-        return <p>Please select an option from the sidebar.</p>; // Default placeholder
+        return <div><Mainmenu/></div>; // Default placeholder
     }
   };
 

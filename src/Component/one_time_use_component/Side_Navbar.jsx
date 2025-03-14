@@ -9,8 +9,9 @@ export default function SideNavbar({ setActiveComponent }) {
       { label: "Add Subject Details", component: "AddSubjectDetails" },
       { label: "Attendance", component: "Attendance" },
       { label: "View Attendance", component: "ViewAttendance" },
-      { label: "Subject & Grades 1 - 9", component: "Subject_and_Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Subject & Grades 10 - 12", component: "Subject_and_Grades_10to12" }, // Add cases or handle in AdminDashboard
+      { label: "Subject & Grades 1 - 9", component: "Subject_and_Grades" }, 
+      { label: "Subject & Grades 10 - 12", component: "Subject_and_Grades_10to12" }, 
+      { label: "Exam Records", component: "Exam_Records" }, 
      
     ],
     1: [

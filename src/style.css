@@ -177,10 +177,10 @@ ul {
 }
 
 .dropdown-menu {
-  list-style-type:decimal; /* Removes bullet points from the dropdown menu */
+   /* Removes bullet points from the dropdown menu */
   padding-left: 20px; /* Removes left padding */
   margin: 0; /* Removes margin */
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: 20px;
   /* margin-bottom: 20px; */
   /* border-left: 1px solid black; */
@@ -193,8 +193,16 @@ ul {
   padding: 3px;
   font-size:small;
   transition: background 0.3s ease, color 0.3s ease;
+  
 
 }
+.dropdown-menu-li::before {
+  content: "➤";  /* Unicode arrow character */
+  margin-right: 8px;
+  color: #4F46E5; /* Arrow color */
+  font-size: 14px;
+}
+
 .dropdown-menu-li:hover{
   
   cursor: pointer;
@@ -203,8 +211,6 @@ ul {
   
 
 }
-
-
 
 
 .content-container {
@@ -261,6 +267,31 @@ ul {
   }
 }
 
+/* Mainmenu */
+
+
+.Mainmenu-container{
+
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.Mainmenu-container-details{
+  display: flex;
+
+}
+.Mainmenu-container-details-1{
+
+  background: red;
+  height: 200px;
+  width: 200px;
+}
+.Mainmenu-container-details-2{
+
+  background:blue;
+  height: 200px;
+  width: 200px;
+}
 
 /* Attendance and view Attendance content */
 
