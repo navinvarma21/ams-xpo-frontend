@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 
 export default function SideNavbar({ setActiveComponent }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -7,20 +8,21 @@ export default function SideNavbar({ setActiveComponent }) {
     0: [
       { label: "Add Subject Details", component: "AddSubjectDetails" },
       { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
+      { label: "View Attendance", component: "ViewAttendance" },
+      { label: "Subject & Grades 1 - 9", component: "Subject_and_Grades" }, // Add cases or handle in AdminDashboard
+      { label: "Subject & Grades 10 - 12", component: "Subject_and_Grades_10to12" }, // Add cases or handle in AdminDashboard
+     
     ],
     1: [
-      { label: "Add Subject Details", component: "AddSubjectDetails" },
-      { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
+      { label: "Add New Teacher", component: "Add_New_Teacher" },
+      { label: "Subject to Handle", component: "Subject_to_Handle" },
+      { label: "Timetable", component: "Timetable" }, // Add cases or handle in AdminDashboard
+      
     ],
     2: [
-      { label: "Add Subject Details", component: "AddSubjectDetails" },
-      { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
+      { label: "Add Exams", component: "Add_Exams" },
+      { label: "View Exam Details", component: "View_Exam_Details" },
+     
     ],
     3: [
       { label: "Add Subject Details", component: "AddSubjectDetails" },
@@ -35,13 +37,11 @@ export default function SideNavbar({ setActiveComponent }) {
       { label: "Delete Student", component: "Delete Student" },
     ],
     5: [
-
-        { label: "Add Subject Details", component: "AddSubjectDetails" },
-        { label: "Attendance", component: "Attendance" },
-        { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-        { label: "Delete Student", component: "Delete Student"},
-       
-      ],
+      { label: "Add Subject Details", component: "AddSubjectDetails" },
+      { label: "Attendance", component: "Attendance" },
+      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
+      { label: "Delete Student", component: "Delete Student" },
+    ],
     // Add similar dropdown items for other buttons...
   };
 
@@ -56,7 +56,6 @@ export default function SideNavbar({ setActiveComponent }) {
           "Student Management",
           "Teacher Management",
           "Examination Management",
-          "Fee Management",
           "Announcement Management",
           "Events",
         ].map((item, index) => (
@@ -76,6 +75,7 @@ export default function SideNavbar({ setActiveComponent }) {
                     onClick={
                       () => setActiveComponent(subItem.component) // Set active component
                     }
+                    className="dropdown-menu-li"
                   >
                     {subItem.label}
                   </li>
@@ -85,6 +85,7 @@ export default function SideNavbar({ setActiveComponent }) {
           </li>
         ))}
       </ul>
+      
     </div>
   );
 }

@@ -138,8 +138,9 @@
 .Footer-container {
   position: absolute;
   font-weight: 500;
-  margin-top: 1%;
+  margin-top: 0%;
   margin-left: 15px;
+  bottom: 20px;
 }
 .side-Navbar-container-heading{
 
@@ -176,40 +177,113 @@ ul {
 }
 
 .dropdown-menu {
-  list-style-type: none; /* Removes bullet points from the dropdown menu */
-  padding-left: 0; /* Removes left padding */
+  list-style-type:decimal; /* Removes bullet points from the dropdown menu */
+  padding-left: 20px; /* Removes left padding */
   margin: 0; /* Removes margin */
   margin-left: 40px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  /* border-left: 1px solid black; */
+  
+
+    
+}
+.dropdown-menu-li{
+
+  padding: 3px;
+  font-size:small;
+  transition: background 0.3s ease, color 0.3s ease;
+
+}
+.dropdown-menu-li:hover{
+  
+  cursor: pointer;
+  padding: 3px;
+  color: #4F46E5;
+  
+
 }
 
 
 
-/* common styles for content container*/
+
+.content-container {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-input {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  text-align: center;
+  width: 200px;
+  margin: 0;
+}
+
+.form-button {
+  padding: 10px;
+  width: 110px;
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .form-input {
+    width: 100%; /* Full-width inputs on smaller screens */
+    margin-left: 0; /* Remove margin for alignment */
+  }
+
+  .form-button {
+    width: 100%; /* Full-width buttons for better usability */
+  }
+
+  .form-section {
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
 
 
-.Common-Content-container-container1{
+/* Attendance and view Attendance content */
+
+.search-section {
   display: flex;
   flex-direction: row; 
   align-items: center;
   justify-content: center;
   gap: 20px; 
   width: 100%;
-  margin-top: 20px;
+  margin-top: 6%;
 }
 
-.Common-Content-container-container1-input {
+.input-dropdown {
   padding: 8px;
   border-radius: 15px;
   border: 2px solid #D1D0D0;
   text-align: center;
-  width: 200px;
   margin: 0; 
   margin-left: 20px;
 }
 
-.Common-Content-container-container1-btn{
+.btn-attendance {
   padding: 10px;
   width: 110px; 
   height: 40px;
@@ -222,15 +296,69 @@ ul {
   text-align: center;
   cursor: pointer;
 }
-.Common-Content-container{
 
+.btn-export {
+  padding: 10px;
+  width: 110px; 
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-weight: 300;
+  border: 2px solid #D1D0D0;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3%;
+}
+
+.content-container {
   margin-top: 20px;
   margin-left: 10px;
 }
 
-/* Attendance content */
+.header-section {
+  display: flex;
+}
 
-.C-C-C-container1{
+.input-date {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  text-align: center;
+  margin: 0; 
+  margin-left: 20%;
+}
+
+.btn-view {
+  padding: 10px;
+  width: 210px; 
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20%;
+  position: absolute;
+  left: 97%;
+}
+
+.input-search {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  position: absolute;
+  width: 30%;
+  margin: 0; 
+  margin-left: 20px;
+  right: 60%;
+}
+
+.table-header {
   display: flex;
   flex-direction: row; 
   align-items: center;
@@ -238,6 +366,31 @@ ul {
   gap: 20px; 
   width: 100%;
   margin-top: 6%;
+  font-weight: 300;
+  border-bottom: 1px solid #D1D0D0;
+  padding-bottom: 10px;
+  margin-left: 10%;
+}
+
+.table-column {
+  font-weight: bold;
+  margin-left: 5%;
+  display: flex;
+}
+
+
+
+/* Subject and grades */
+
+
+.C-C-C-container1-S_and_G{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 80%;
+  margin-top: 2%;
 }
 
 .C-C-C-input-Attendance {
@@ -294,11 +447,11 @@ ul {
   text-align: center;
   
   margin: 0; 
-  margin-left: 50%;
+  margin-left: 41%;
 }
 .C-C-C-btn-View-Attendance{
   padding: 10px;
-  width: 210px; 
+  width: 170px; 
   height: 40px;
   background-color: #4F46E5;
   color: white;
@@ -308,7 +461,7 @@ ul {
   font-size: medium;
   text-align: center;
   cursor: pointer;
-  margin-left: 20%;
+  margin-left: 42%;
   position: absolute;
   left: 97%;
 }
@@ -336,10 +489,157 @@ ul {
   margin-left: 10%;
 }
 
-.C-C-C-container1-p{
-
-  font-weight:bold;
-  margin-left: 5%;
+.C-C-C-container3{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 2%;
+  font-weight: 30;
+  
+  padding-bottom: 10px;
+  margin-left: 10%;
 }
 
-/* Subject and grades */
+
+.C-C-C-container1-p-VA{
+
+  font-weight:bold;
+  margin-left: 2%;
+  width: 130px;
+ 
+}
+.C-C-C-container1-p-S_and_G{
+
+  font-weight:400;
+  margin-left: 2%;
+  width: 130px;
+  
+}
+.C-C-C-container4{
+
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 2%;
+  font-weight: 30;
+  
+  padding-bottom: 10px;
+  margin-left: 20%;
+  color: red;
+}
+.C-C-C-container4-p-VA{
+
+  font-weight:bold;
+  margin-left: 20px;
+  width: 170px;
+  
+ 
+}
+
+.C-C-C-container1-p-SG{
+
+  font-weight:bold;
+  
+  width: 170px;
+  margin-right: 20%;
+  
+ 
+}
+.C-C-C-container5{
+
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 2%;
+  font-weight: 30;
+  
+  padding-bottom: 10px;
+  margin-left: 10%;
+}
+.C-C-C-container5-p-VA{
+
+  font-weight:300;
+ 
+  width: 170px;
+ 
+}
+
+.doubletable{
+ 
+  display: flex;
+  align-items: center;
+  position:absolute;
+  top: 95%;
+ /* left: 20%; */
+ 
+
+}
+
+/* Wrapper for table */
+.table-wrapper {
+  max-width: 100%; /* Restrict width */
+  overflow-x: auto; /* Scroll horizontally if necessary */
+  padding: 5px; /* Minimized padding */
+  box-sizing: border-box;
+}
+
+/* Table Styling */
+.compact-table {
+  width: 100%;
+  border-collapse: collapse; /* Remove cell spacing */
+  font-size: 12px; /* Smaller font size */
+}
+
+.compact-table td {
+  border: 1px solid #ddd;
+  padding: 5px; /* Reduced padding */
+  text-align: center;
+}
+
+/* Input fields */
+.compact-input {
+  width: 95%; /* Compact input width */
+  padding: 4px; /* Reduced input padding */
+  font-size: 12px; /* Smaller font for compact appearance */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .compact-input {
+    width: 100%; /* Adjust for smaller screens */
+  }
+}
+.tablemark{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.C-C-C-btn-SG{
+  padding: 10px;
+  
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20%;
+  position: absolute;
+  left: 90%;
+  bottom: 5px;
+
+}
+

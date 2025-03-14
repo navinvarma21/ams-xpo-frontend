@@ -1,21 +1,60 @@
+// import React from "react";
+
+// export default function Add_Subject_Details() {
+//   return (
+//     <div className="Common-Content-container">
+//       <h1>Add Subject Details</h1>
+
+//       <div>
+//         <div className="Common-Content-container-container1">
+//           <input
+//             type="text"
+//             name="subject"
+//             placeholder="Enter Subject Name"
+//             required
+//             className="Common-Content-container-container1-input"
+//           />
+
+//           <select name="standard" required className="Common-Content-container-container1-input">
+//             <option value="" disabled selected>
+//               Select Standard
+//             </option>
+//             {[...Array(12)].map((_, i) => (
+//               <option key={i} value={`${i + 1}th`}>
+//                 {i + 1}th
+//               </option>
+//             ))}
+//           </select>
+
+//           <button type="submit" className="Common-Content-container-container1-btn">
+//             Add
+//           </button>
+//           <button type="submit" className="Common-Content-container-container1-btn">
+//             Save All
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 import React from "react";
 
-export default function Add_Subject_Details() {
+export default function AddSubjectDetails() {
   return (
-    <div className="Common-Content-container">
+    <div className="content-container">
       <h1>Add Subject Details</h1>
 
       <div>
-        <div className="Common-Content-container-container1">
+        <div className="form-section">
           <input
             type="text"
             name="subject"
             placeholder="Enter Subject Name"
             required
-            className="Common-Content-container-container1-input"
+            className="form-input"
           />
 
-          <select name="standard" required className="Common-Content-container-container1-input">
+          <select name="standard" required className="form-input">
             <option value="" disabled selected>
               Select Standard
             </option>
@@ -26,10 +65,10 @@ export default function Add_Subject_Details() {
             ))}
           </select>
 
-          <button type="submit" className="Common-Content-container-container1-btn">
+          <button type="submit" className="form-button">
             Add
           </button>
-          <button type="submit" className="Common-Content-container-container1-btn">
+          <button type="submit" className="form-button">
             Save All
           </button>
         </div>
