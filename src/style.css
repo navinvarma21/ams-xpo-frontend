@@ -184,63 +184,34 @@ ul {
   margin-bottom: 20px;
 }
 
-/* Add Subject Details */
-/* 
-.input1 {
 
-  padding: 8px;
-  border-radius: 15px;
-  box-shadow: none !important;
-  outline: none !important;
-  border: 2px solid #D1D0D0;
-  text-align: center;
-  margin-left: 20px;
-  margin-top: 10%;
 
-}
-.Add-subject-container{
+/* common styles for content container*/
 
+
+.Common-Content-container-container1{
   display: flex;
+  flex-direction: row; 
   align-items: center;
   justify-content: center;
-}
-.Add-subject-container-btn{
-  padding: 10px;
-  width: 50%;
-  height: 40px;
-  background-color: #A5C2E0;
-  box-shadow: none !important;
-  outline: none !important;
-  border:none;
-  border-radius: 5px;
-  font-size: medium;
-  margin-left: 80px;
-  
-} */
-
-.Add-subject-container {
-  display: flex;
-  flex-direction: row; /* Align items in a row */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Space items evenly */
-  gap: 20px; /* Adds spacing between elements */
-  width: 100%; /* Ensures full width */
+  gap: 20px; 
+  width: 100%;
   margin-top: 20px;
 }
 
-.input1 {
+.Common-Content-container-container1-input {
   padding: 8px;
   border-radius: 15px;
   border: 2px solid #D1D0D0;
   text-align: center;
-  width: 200px; /* Ensures uniform width */
-  margin: 0; /* Remove extra margin */
+  width: 200px;
+  margin: 0; 
   margin-left: 20px;
 }
 
-.Add-subject-container-btn {
+.Common-Content-container-container1-btn{
   padding: 10px;
-  width: 110px; /* Button width */
+  width: 110px; 
   height: 40px;
   background-color: #4F46E5;
   color: white;
@@ -251,8 +222,124 @@ ul {
   text-align: center;
   cursor: pointer;
 }
-.Add-Subject-Details-container{
+.Common-Content-container{
 
   margin-top: 20px;
   margin-left: 10px;
 }
+
+/* Attendance content */
+
+.C-C-C-container1{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 6%;
+}
+
+.C-C-C-input-Attendance {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  text-align: center;
+  
+  margin: 0; 
+  margin-left: 20px;
+}
+
+.C-C-C-btn-Attendance{
+  padding: 10px;
+  width: 110px; 
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+}
+.C-C-C-btn-Export-Attendance{
+  padding: 10px;
+  width: 110px; 
+  height: 40px;
+  background-color: White;
+  color:black;
+  font-weight: 300;
+  border: 2px solid #D1D0D0;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3%;
+}
+.Common-Content-container{
+
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.C-C-C-head{
+
+  display: flex;
+}
+.C-C-C-input-date-Attendance{
+
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  text-align: center;
+  
+  margin: 0; 
+  margin-left: 50%;
+}
+.C-C-C-btn-View-Attendance{
+  padding: 10px;
+  width: 210px; 
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20%;
+  position: absolute;
+  left: 97%;
+}
+.C-C-C-input-Search-Attendance {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #D1D0D0;
+  position: absolute;
+  width: 30%;
+  margin: 0; 
+  margin-left: 20px;
+  right: 60%;
+}
+.C-C-C-container2{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 6%;
+  font-weight: 300;
+  border-bottom: 1px solid #D1D0D0;
+  padding-bottom: 10px;
+  margin-left: 10%;
+}
+
+.C-C-C-container1-p{
+
+  font-weight:bold;
+  margin-left: 5%;
+}
+
+/* Subject and grades */

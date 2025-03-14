@@ -4,6 +4,7 @@ import SideNavbar from "../one_time_use_component/Side_Navbar";
 import Footer from "../one_time_use_component/Footer";
 
 import Add_Subject_Details from "../pages/AdminDashboard/Add_Subject_Details";
+import Attendane from "../pages/AdminDashboard/Attendane";
 
 export default function AdminDashboard() {
   const [activeComponent, setActiveComponent] = useState(null); // State to manage the active component
@@ -14,8 +15,8 @@ export default function AdminDashboard() {
       case "AddSubjectDetails":
         return <Add_Subject_Details/>;
 
-      case "AddStudent":
-        return <AddStudent />;
+      case "Attendance":
+        return <Attendane/>;
 
       case "AddStudent":
         return <AddStudent />;
