@@ -278,21 +278,39 @@ ul {
 
 .Mainmenu-container-details{
   display: flex;
+  position: absolute;
+  left: 70%;
+  margin-top: 20%;
 
 }
 .Mainmenu-container-details-1{
 
-  background: red;
+  
   height: 200px;
   width: 200px;
 }
 .Mainmenu-container-details-2{
 
-  background:blue;
+  
   height: 200px;
   width: 200px;
 }
+.Mainmenu-container-details-1-p{
 
+  margin: 20px;
+  background-color: #22C55E;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.report{
+
+  background-color: red;
+  height: 40%;
+  width: 70%;
+  margin: 30%;
+}
 /* Attendance and view Attendance content */
 
 .search-section {
