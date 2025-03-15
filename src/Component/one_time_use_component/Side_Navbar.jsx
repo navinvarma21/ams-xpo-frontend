@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import Footer from "./Footer";
+import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 
 export default function SideNavbar({ setActiveComponent }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -9,41 +10,28 @@ export default function SideNavbar({ setActiveComponent }) {
       { label: "Add Subject Details", component: "AddSubjectDetails" },
       { label: "Attendance", component: "Attendance" },
       { label: "View Attendance", component: "ViewAttendance" },
-      { label: "Subject & Grades 1 - 9", component: "Subject_and_Grades" }, 
-      { label: "Subject & Grades 10 - 12", component: "Subject_and_Grades_10to12" }, 
-      { label: "Exam Records", component: "Exam_Records" }, 
-     
+      { label: "Subject & Grades 1 - 9", component: "Subject_and_Grades" },
+      { label: "Subject & Grades 10 - 12", component: "Subject_and_Grades_10to12" },
+      { label: "Exam Records", component: "Exam_Records" },
     ],
     1: [
       { label: "Add New Teacher", component: "Add_New_Teacher" },
+      { label: "Search Teacher", component: "Search_Teacher" },
       { label: "Subject to Handle", component: "Subject_to_Handle" },
-      { label: "Timetable", component: "Timetable" }, // Add cases or handle in AdminDashboard
-      
+      { label: "Timetable", component: "Timetable" },
     ],
     2: [
       { label: "Add Exams", component: "Add_Exams" },
       { label: "View Exam Details", component: "View_Exam_Details" },
-     
     ],
     3: [
-      { label: "Add Subject Details", component: "AddSubjectDetails" },
-      { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
+      { label: "Add Announcements", component: "Add_Announcements" },
+      { label: "View Announcements", component: "View_Announcements" },
     ],
     4: [
-      { label: "Add Subject Details", component: "AddSubjectDetails" },
-      { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
+      { label: "Add Events", component: "Add_Events" },
+      { label: "View Events", component: "View_Events" },
     ],
-    5: [
-      { label: "Add Subject Details", component: "AddSubjectDetails" },
-      { label: "Attendance", component: "Attendance" },
-      { label: "Subject & Grades", component: "Subject & Grades" }, // Add cases or handle in AdminDashboard
-      { label: "Delete Student", component: "Delete Student" },
-    ],
-    // Add similar dropdown items for other buttons...
   };
 
   const toggleDropdown = (index) => {
@@ -57,7 +45,7 @@ export default function SideNavbar({ setActiveComponent }) {
           "Student Management",
           "Teacher Management",
           "Examination Management",
-          "Announcement Management",
+          "Announcements",
           "Events",
         ].map((item, index) => (
           <li key={index} className="side-navbar-item">
@@ -68,25 +56,40 @@ export default function SideNavbar({ setActiveComponent }) {
               {item}
             </button>
 
-            {activeDropdown === index && (
-              <ul className="dropdown-menu">
-                {dropdownItems[index]?.map((subItem, subIndex) => (
-                  <li
-                    key={subIndex}
-                    onClick={
-                      () => setActiveComponent(subItem.component) // Set active component
-                    }
-                    className="dropdown-menu-li"
-                  >
-                    {subItem.label}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <AnimatePresence>
+              {activeDropdown === index && (
+                <motion.ul
+                  className="dropdown-menu"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{
+                    opacity: { duration: 0 },
+                    height: { duration: 0.2, ease: "easeInOut" },
+                  }}
+                >
+                  {dropdownItems[index]?.map((subItem, subIndex) => (
+                    <motion.li
+                      key={subIndex}
+                      onClick={() => setActiveComponent(subItem.component)}
+                      className="dropdown-menu-li"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{
+                        opacity: { duration: 0.2 },
+                        x: { duration: 0.2 },
+                      }}
+                    >
+                      {subItem.label}
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
           </li>
         ))}
       </ul>
-      
     </div>
   );
 }
