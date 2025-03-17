@@ -10,7 +10,6 @@ export default function Subject_and_Grades_1to9() {
       <div className="Common-Content-container">
         <h1>Subject & Grades 1-9 </h1>
 
-        
         <div className="C-C-C-container1-S_and_G">
           <input
             type="text"
@@ -20,47 +19,48 @@ export default function Subject_and_Grades_1to9() {
             className="C-C-C-input-Search-Attendance"
           />
           <div className="C-C-C-head">
-          <input
-            type="Date"
-            name="Date"
-            placeholder="Date"
-            required
-            className="C-C-C-input-date-Attendance"
-          />
+            <input
+              type="Date"
+              name="Date"
+              placeholder="Date"
+              required
+              className="C-C-C-input-date-Attendance"
+            />
 
-          <button type="submit" className="C-C-C-btn-Export-Attendance">
-            Export
-          </button>
-          <select name="standard" required className="C-C-C-input-Attendance ">
-            <option value="" disabled selected>
-              Select Standard
-            </option>
-            {[...Array(12)].map((_, i) => (
-              <option key={i} value={`${i + 1} Standard`}>
-                {i + 1} Std
+            <button type="submit" className="C-C-C-btn-Export-Attendance">
+              Export
+            </button>
+            <select
+              name="standard"
+              required
+              className="C-C-C-input-Attendance "
+            >
+              <option value="" disabled selected>
+                Select Standard
               </option>
-            ))}
-          </select>
-          <select name="section" required className="C-C-C-input-Attendance ">
-            <option value="section" disabled selected>
-              Section
-            </option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
-          <button
-          type="button" 
-          className="C-C-C-btn-View-Attendance"
-          onClick={() => setViewMode(true)} 
-        >
-          View Exam Record
-        </button>
+              {[...Array(12)].map((_, i) => (
+                <option key={i} value={`${i + 1} Standard`}>
+                  {i + 1} Std
+                </option>
+              ))}
+            </select>
+            <select name="section" required className="C-C-C-input-Attendance ">
+              <option value="section" disabled selected>
+                Section
+              </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+            <button
+              type="button"
+              className="C-C-C-btn-View-Attendance"
+              onClick={() => setViewMode(true)}
+            >
+              View Exam Record
+            </button>
+          </div>
         </div>
-
-        </div>
-
-       
 
         <div className="C-C-C-container2">
           <table>
