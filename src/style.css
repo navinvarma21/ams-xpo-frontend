@@ -1101,3 +1101,150 @@ ul {
   margin-left: 2%;
   margin-top: 3%;
 }
+.time-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between start and end time inputs */
+  max-width: 400px; /* Optional width for better layout */
+  margin: 0 auto; /* Center the container */
+}
+
+.time-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between label and input field */
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input[type="time"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Full-width for better alignment */
+  box-sizing: border-box;
+}
+
+input[type="time"]:focus {
+  outline: none;
+  border-color: #4f46e5; /* Highlight color when focused */
+}
+
+
+/* Add Exams */
+
+
+/* General Container for Add New Teacher */
+.add-new-Exam-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  gap: 15px; /* Spacing between elements */
+}
+
+/* Title Styling */
+.add-new-teacher-title {
+  font-size: 24px;
+  text-align: center;
+  
+}
+
+/* Input Boxes for Teacher Information */
+.add-new-teacher-input {
+  width: 200px;
+  padding: 5px;
+  border: 2px solid #D1D0D0;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+/* Table for Teacher Records */
+.add-new-Exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 60%;
+
+}
+
+.add-new-Exam-table thead th {
+  background-color: #f1f1f1; /* Light gray background for header */
+  text-align: center;
+  padding: 8px; /* Compact padding */
+  font-size: 14px;
+  
+}
+
+.add-new-Exam-table tbody td {
+  padding: 5px;
+  text-align: center;
+}
+
+.add-new-Exam-table input {
+  width: 90%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 6px;
+}
+.add-new-Exam-title-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60%;
+  width: 100%;
+}
+.a-n-t-btn{
+  padding: 10px;
+  
+  height: 40px;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+ 
+  margin-left: 20px;
+  margin-top: 20px;
+ 
+  bottom: 5px;
+}
+.Add-exam-title{
+
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.Add-exam-label{
+  width: 20%;
+}
+
+.add-new-Exam-table1{
+  width: 90%;
+  padding: 2px;
+ border-radius: 1px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 6px;
+  
+}
