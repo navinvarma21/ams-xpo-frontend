@@ -42,7 +42,7 @@ export default function Subject_to_Handle() {
               <td>
                 <select>
                   <option value="" disabled selected>
-                    Select Subject 1
+                    Select Subject 2
                   </option>
                   <option value="tamil">Tamil</option>
                   <option value="english">English</option>
@@ -59,60 +59,7 @@ export default function Subject_to_Handle() {
               <td>
                 <select>
                   <option value="" disabled selected>
-                    Select Subject 1
-                  </option>
-                  <option value="tamil">Tamil</option>
-                  <option value="english">English</option>
-                  <option value="maths">Mathematics</option>
-                  <option value="science">Science</option>
-                  <option value="social">Social Studies</option>
-                  <option value="physics">Physics</option>
-                  <option value="chemistry">Chemistry</option>
-                  <option value="biology">Biology</option>
-                  <option value="maths_cbse">Mathematics</option>
-                  <option value="english_cbse">English</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select>
-                  <option value="" disabled selected>
-                    Select Subject 1
-                  </option>
-                  <option value="tamil">Tamil</option>
-                  <option value="english">English</option>
-                  <option value="maths">Mathematics</option>
-                  <option value="science">Science</option>
-                  <option value="social">Social Studies</option>
-                  <option value="physics">Physics</option>
-                  <option value="chemistry">Chemistry</option>
-                  <option value="biology">Biology</option>
-                  <option value="maths_cbse">Mathematics</option>
-                  <option value="english_cbse">English</option>
-                </select>
-              </td>
-              <td>
-                <select>
-                  <option value="" disabled selected>
-                    Select Subject 1
-                  </option>
-                  <option value="tamil">Tamil</option>
-                  <option value="english">English</option>
-                  <option value="maths">Mathematics</option>
-                  <option value="science">Science</option>
-                  <option value="social">Social Studies</option>
-                  <option value="physics">Physics</option>
-                  <option value="chemistry">Chemistry</option>
-                  <option value="biology">Biology</option>
-                  <option value="maths_cbse">Mathematics</option>
-                  <option value="english_cbse">English</option>
-                </select>
-              </td>
-              <td>
-                <select>
-                  <option value="" disabled selected>
-                    Select Subject 1
+                    Select Subject 3
                   </option>
                   <option value="tamil">Tamil</option>
                   <option value="english">English</option>
@@ -131,7 +78,60 @@ export default function Subject_to_Handle() {
               <td>
                 <select>
                   <option value="" disabled selected>
-                    Select Subject 1
+                    Select Subject 4
+                  </option>
+                  <option value="tamil">Tamil</option>
+                  <option value="english">English</option>
+                  <option value="maths">Mathematics</option>
+                  <option value="science">Science</option>
+                  <option value="social">Social Studies</option>
+                  <option value="physics">Physics</option>
+                  <option value="chemistry">Chemistry</option>
+                  <option value="biology">Biology</option>
+                  <option value="maths_cbse">Mathematics</option>
+                  <option value="english_cbse">English</option>
+                </select>
+              </td>
+              <td>
+                <select>
+                  <option value="" disabled selected>
+                    Select Subject 5
+                  </option>
+                  <option value="tamil">Tamil</option>
+                  <option value="english">English</option>
+                  <option value="maths">Mathematics</option>
+                  <option value="science">Science</option>
+                  <option value="social">Social Studies</option>
+                  <option value="physics">Physics</option>
+                  <option value="chemistry">Chemistry</option>
+                  <option value="biology">Biology</option>
+                  <option value="maths_cbse">Mathematics</option>
+                  <option value="english_cbse">English</option>
+                </select>
+              </td>
+              <td>
+                <select>
+                  <option value="" disabled selected>
+                    Select Subject 6
+                  </option>
+                  <option value="tamil">Tamil</option>
+                  <option value="english">English</option>
+                  <option value="maths">Mathematics</option>
+                  <option value="science">Science</option>
+                  <option value="social">Social Studies</option>
+                  <option value="physics">Physics</option>
+                  <option value="chemistry">Chemistry</option>
+                  <option value="biology">Biology</option>
+                  <option value="maths_cbse">Mathematics</option>
+                  <option value="english_cbse">English</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select>
+                  <option value="" disabled selected>
+                    Select Subject 7
                   </option>
                   <option value="tamil">Tamil</option>
                   <option value="english">English</option>
