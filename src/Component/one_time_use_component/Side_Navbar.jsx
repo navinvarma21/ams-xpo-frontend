@@ -19,7 +19,7 @@ export default function SideNavbar({ setActiveComponent }) {
       { label: "Search Teacher", component: "Search_Teacher" },
       { label: "Subject to Handle", component: "Subject_to_Handle" },
       { label: "Timetable", component: "Timetable" },
-      { label: "View Table", component: "Timetable" },
+      { label: "View Timetable", component: "View_Timetable" },
     ],
     2: [
       { label: "Add Exams", component: "Add_Exams" },

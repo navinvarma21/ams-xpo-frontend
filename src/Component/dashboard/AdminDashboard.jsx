@@ -19,6 +19,7 @@ import Add_New_Teacher from "../pages/AdminDashboard/Teacher-Management/Add_New_
 import Search_Teacher from "../pages/AdminDashboard/Teacher-Management/Search_Teacher";
 import Subject_to_Handle from "../pages/AdminDashboard/Teacher-Management/Subject_to_Handle";
 import Timetable from "../pages/AdminDashboard/Teacher-Management/Timetable";
+import View_Timetable from "../pages/AdminDashboard/Teacher-Management/View_Timetable";
 
 export default function AdminDashboard() {
   const [activeComponent, setActiveComponent] = useState(null); // State to manage the active component
@@ -86,6 +87,8 @@ export default function AdminDashboard() {
         return <Subject_to_Handle />;
       case "Timetable":
         return <Timetable />;
+        case "View_Timetable":
+          return <View_Timetable/>;
       case "Add_Exams":
         return <Add_Exams />;
       case "View_Exam_Details":
