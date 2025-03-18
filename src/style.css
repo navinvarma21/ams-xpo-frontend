@@ -1137,25 +1137,25 @@ input[type="time"]:focus {
 
 /* Add Exams */
 
-
-/* General Container for Add New Teacher */
+/* General Container for Add New Exam */
 .add-new-Exam-container {
-  margin-top: 20px;
-  margin-left: 10px;
+  margin: 0; /* Removed margin */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
-  gap: 15px; /* Spacing between elements */
+  gap: 10px; /* Spacing between elements remains */
+  width: 90%; /* Ensure the container adapts to the window */
+
 }
 
 /* Title Styling */
 .add-new-teacher-title {
-  font-size: 24px;
+  font-size: 24px; /* Font size unchanged */
   text-align: center;
-  
+  margin: 0; /* Removed margin */
 }
 
-/* Input Boxes for Teacher Information */
+/* Input Boxes for Exam Information */
 .add-new-teacher-input {
   width: 200px;
   padding: 5px;
@@ -1163,88 +1163,101 @@ input[type="time"]:focus {
   border-radius: 10px;
   font-size: 14px;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
+  margin: 0 auto; /* Removed margin */
 }
 
-/* Table for Teacher Records */
+/* Table for Exam Records */
 .add-new-Exam-table {
   width: 100%;
+  max-width: 1200px; /* Max width remains */
   border-collapse: collapse;
-  border: 2px solid #ccc; /* Light border */
+  border: 2px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
-  margin-top: 20px;
-  margin-left: 60%;
+  margin: 0 auto; /* Removed margin */
 
+  margin-left: 10%;
 }
 
 .add-new-Exam-table thead th {
-  background-color: #f1f1f1; /* Light gray background for header */
+  background-color: #f1f1f1;
   text-align: center;
-  padding: 8px; /* Compact padding */
-  font-size: 14px;
-  
+  padding: 8px; /* Padding remains */
+  font-size: 14px; /* Font size unchanged */
+  margin: 0; /* Removed margin */
 }
 
 .add-new-Exam-table tbody td {
-  padding: 5px;
+  padding: 5px; /* Padding remains */
   text-align: center;
+  margin: 0; /* Removed margin */
 }
 
-.add-new-Exam-table input {
+/* Inputs inside the Table */
+.add-new-Exam-table input,
+.add-new-Exam-table select {
   width: 90%;
-  padding: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 12px;
+  padding: 4px; /* Padding remains */
+  font-size: 12px; /* Font size unchanged */
   box-sizing: border-box;
-  border: 2px solid #ccc; /* Light border */
+  border: 2px solid #ccc;
   border-radius: 6px;
+  margin: 0; /* Removed margin */
 }
-.add-new-Exam-title-2{
+
+/* Title Container */
+.add-new-Exam-title-2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 60%;
+  margin: 0 auto; /* Removed margin */
   width: 100%;
+  max-width: 1200px; /* Max width remains */
 }
-.a-n-t-btn{
-  padding: 10px;
-  
-  height: 40px;
+
+/* Buttons */
+.a-n-t-btn {
+  padding: 10px; /* Padding remains */
+  height: 40px; /* Button height unchanged */
   background-color: #4F46E5;
   color: white;
   font-weight: 300;
   border: none;
   border-radius: 5px;
-  font-size: medium;
+  font-size: medium; /* Font size unchanged */
   text-align: center;
   cursor: pointer;
- 
-  margin-left: 20px;
-  margin-top: 20px;
- 
-  bottom: 5px;
-}
-.Add-exam-title{
-
-  margin-left: 2%;
-  margin-top: 3%;
+  margin: 5px 10px; /* Removed top/bottom margin */
 }
 
-.Add-exam-label{
+.a-n-t-btn:hover {
+  background-color: #3730A3; /* Darker shade for hover effect */
+}
+
+/* Add Exam Title */
+.Add-exam-title {
+  margin: 0; /* Removed margin */
+  text-align: center;
+}
+
+/* Labels */
+.Add-exam-label {
   width: 20%;
+  margin: 0; /* Removed margin */
+  text-align: left;
+  font-size: 14px; /* Font size unchanged */
 }
 
-.add-new-Exam-table1{
+/* Select Inputs */
+.add-new-Exam-table1 {
   width: 90%;
-  padding: 2px;
- border-radius: 1px;
-  font-size: 12px;
+  padding: 2px; /* Padding remains */
+  font-size: 12px; /* Font size unchanged */
   box-sizing: border-box;
-  border: 2px solid #ccc; /* Light border */
+  border: 2px solid #ccc;
   border-radius: 6px;
+  margin: 0; /* Removed margin */
   
+ 
 }
+
