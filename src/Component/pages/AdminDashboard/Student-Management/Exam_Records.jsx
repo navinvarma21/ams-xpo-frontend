@@ -1,36 +1,31 @@
-
-
 import React, { useState } from "react";
 
 export default function ExamRecords() {
- 
   return (
     <>
-      <div className="exam-records-container">
-        <h1 className="exam-records-title">Exam Records</h1>
+      <div className="exam-records">
+        <h1 className="exam-records__title">Exam Records</h1>
 
-        <div className="exam-records-filters">
+        <div className="exam-records__filters">
           <input
             type="text"
             name="search"
             placeholder="Search"
             required
-            className="exam-records-search"
+            className="exam-records__search"
           />
-          <div className="exam-records-header">
-           
-             <select name="Select Exam" required className="exam-records-select-exam">
+          <div className="exam-records__header">
+            <select name="Select Exam" required className="exam-records__select exam-records__select--exam">
               <option value="" disabled selected>
                 Select Exam
               </option>
               <option value="half-yearly">Half-Yearly</option>
-                  <option value="quarterly">Quarterly</option>
-                  <option value="annual">Annual</option>
-                  <option value="internal">internal</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annual">Annual</option>
+              <option value="internal">Internal</option>
             </select>
 
-          
-            <select name="standard" required className="exam-records-standard">
+            <select name="standard" required className="exam-records__select exam-records__select--standard">
               <option value="" disabled selected>
                 Select Standard
               </option>
@@ -40,7 +35,8 @@ export default function ExamRecords() {
                 </option>
               ))}
             </select>
-            <select name="section" required className="exam-records-section">
+
+            <select name="section" required className="exam-records__select exam-records__select--section">
               <option value="" disabled selected>
                 Section
               </option>
@@ -48,60 +44,116 @@ export default function ExamRecords() {
               <option value="B">B</option>
               <option value="C">C</option>
             </select>
-            <button type="submit" className="exam-records-export-btn">
+
+            <button type="submit" className="exam-records__button exam-records__button--export">
               Export
             </button>
-           
           </div>
         </div>
 
-        <div className="exam-records-table-section">
-          <table className="exam-records-table">
+        <div className="exam-records__table-section">
+          <table className="exam-records__table">
             <thead>
               <tr>
                 <th>
-                  <p className="exam-records-column-header">Academic Year</p>
+                  <p className="exam-records__column-header">Academic Year</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-header">Student Name</p>
+                  <p className="exam-records__column-header">Student Name</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-header">Standard</p>
+                  <p className="exam-records__column-header">Standard</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-header">Section</p>
+                  <p className="exam-records__column-header">Section</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-header">Exam Type</p>
+                  <p className="exam-records__column-header">Exam Type</p>
                 </th>
               </tr>
             </thead>
           </table>
         </div>
 
-        <div className="exam-records-additional-table">
-          <table className="exam-records-table">
+        <div className="exam-records__additional-table">
+          <table className="exam-records__table">
             <thead>
               <tr>
                 <th>
-                  <p className="exam-records-column-detail">Academic Year</p>
+                  <p className="exam-records__column-detail">Academic Year</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-detail">Student Name</p>
+                  <p className="exam-records__column-detail">Student Name</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-detail">Standard</p>
+                  <p className="exam-records__column-detail">Standard</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-detail">Section</p>
+                  <p className="exam-records__column-detail">Section</p>
                 </th>
                 <th>
-                  <p className="exam-records-column-detail">Exam</p>
+                  <p className="exam-records__column-detail">Exam</p>
                 </th>
               </tr>
             </thead>
           </table>
+          
         </div>
+        <div className="exam-table-container">
+      <table className="exam-table">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Subject Name</th>
+            <th>Obtained Marks</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Tamil</td>
+            <td>95 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>English</td>
+            <td>93 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Maths</td>
+            <td>90 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Science</td>
+            <td>97 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Social Science</td>
+            <td>90 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Moral Science</td>
+            <td>96 / 100</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td colSpan="2">Total</td>
+            <td>= 561 / 600</td>
+            <td>Pass</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
       </div>
     </>
   );

@@ -105,16 +105,20 @@ export default function Subject_and_Grades_1to9() {
             <thead>
               <tr>
                 <th>
-                  <p className="subject-grades__selector-text">Academic Year</p>
+                  <p className="subject-grades__selector-text-data">
+                    Academic Year
+                  </p>
                 </th>
                 <th>
-                  <p className="subject-grades__selector-text">Student Name</p>
+                  <p className="subject-grades__selector-text-data">
+                    Student Name
+                  </p>
                 </th>
                 <th>
-                  <p className="subject-grades__selector-text">Standard</p>
+                  <p className="subject-grades__selector-text-data">Standard</p>
                 </th>
                 <th>
-                  <p className="subject-grades__selector-text">Section</p>
+                  <p className="subject-grades__selector-text-data">Section</p>
                 </th>
                 <th>
                   <select
@@ -250,12 +254,35 @@ export default function Subject_and_Grades_1to9() {
               </tr>
             </tbody>
           </table>
+          <table className="subject-grades__marks-table">
+            <thead>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Enter Total Marks"
+                    className="subject-grades__subject-input"
+                  />
+                </td>
+                <td>
+                  <select className="subject-grades__status-select">
+                    <option value="" disabled selected>
+                      Select Status
+                    </option>
+                    <option value="pass">Pass</option>
+                    <option value="fail">Fail</option>
+                  </select>
+                </td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </div>
       <button
-        type="button" // Changed to "button" for handling click
-        className="subject-grades__Submit-btn"
-        onClick={() => setViewMode(true)} // Toggle to View_Attendance
+        type="button"
+        className="subject-grades__Submit-btn-1to9"
+        onClick={() => setViewMode(true)}
       >
         Submit
       </button>
