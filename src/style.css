@@ -3,1034 +3,167 @@
   padding: 0;
   font-family: "Inter", sans-serif;
   position: relative;
-}
-
-/*Login page*/
-
-.Logoname_contaier {
-  display: flex;
-
-  align-items: "center";
-  margin: 20px;
-}
-.Logoname_contaier_1 {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-
-  width: 100%;
-}
-.Logoname_contaier_2 {
-  display: flex;
-  width: 40%;
-  align-items: center;
-}
-.schoolname {
-  font-size: 20px;
-  
-}
-.schoolname1{
-  
-  font-size: 20px;
-}
-.Login-container_1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
-  flex-direction: column;
-  gap: 10px;
-}
-.Login-container {
-  background-color: white;
-  height: 310px;
-  width: 300px;
-  border-radius: 30px;
-  border: 1px solid black;
-}
-
-.Logoname_contaier_3 {
-  position: absolute;
-  font-weight: 500;
-  margin-top: 37%;
-  margin-left: 15px;
-}
-.full-container {
-  position: relative;
-}
-.input {
-
-  padding: 8px;
-  border-radius: 15px;
-  box-shadow: none !important;
-  outline: none !important;
-  border: 1px solid black;
-  text-align: center;
-
-}
-.btn{
-  padding: 10px;
-  width: 70px;
-  background-color: #A5C2E0;
-  box-shadow: none !important;
-  outline: none !important;
-  border:none;
-  border-radius: 5px;
-  font-size: medium;
-  
-}
-
-.btn-1{
-  padding: 10px;
-  width: 70px;
-  background-color:#22C55E;
-  box-shadow: none !important;
-  outline: none !important;
-  border:none;
-  border-radius: 5px;
-  font-size: medium;
-  color: white;
-  
-}
-
-/* Header */
-
-.Header-Contaier-Navbar {
-  display: flex;
-
-  align-items: "center";
-  margin: 20px;
-}
-.Header-Contaier-Navbar-start {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-
-  width: 100%;
-}
-.Header-Contaier-Navbar-end {
-  display: flex;
-  width: 40%;
-  align-items: center;
-}
-.Header-Contaier-Navbar-end-1{
-
-  padding-right: 20px;
-  font-weight:600;
-
-}
-.Header-Container{
-  border-bottom: 1px solid #D1D0D0;
-}
-
-/* side navbar */
-
-.side-navbar-container{
-
-  width: 20%;
-  height: 80vh;
-  border-right:1px solid #D1D0D0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-.Footer-container {
-  position: absolute;
-  font-weight: 500;
-  margin-top: 0%;
-  margin-left: 15px;
-  bottom: 20px;
-}
-.side-Navbar-container-heading{
-
-  padding: 20px;
-  
-  height: 10px;
-  display: flex;
-  margin-top: 20px;
-  border:1px solid black;
-  box-shadow: none !important;
-  outline: none !important;
-  align-items: center;
-  /* justify-content: center; */
-  border-radius: 10px;
-  width: 100%;
-  
-  
-}
-.side-Navbar-container-heading:hover{
-
-  cursor: pointer;
-
-}
-.side-Navbar-container-heading-container{
-  position: relative;
-  bottom: 10%;
-  right: 72px;
-
-}
-ul {
-  list-style-type: none; /* Removes bullet points */
-  padding-left: 0; /* Removes left padding */
-  margin: 0; /* Removes margin */
-}
-
-.dropdown-menu {
-   /* Removes bullet points from the dropdown menu */
-  padding-left: 20px; /* Removes left padding */
-  margin: 0; /* Removes margin */
-  margin-left: 10px;
-  margin-top: 20px;
-  /* margin-bottom: 20px; */
-  /* border-left: 1px solid black; */
-  
-
-    
-}
-.dropdown-menu-li {
-  padding: 10px;
-  list-style: none;
-  cursor: pointer;
-}
-
-.dropdown-menu-li:hover {
-  background-color: #f0f0f0; /* Highlight on hover */
-}
-
-.dropdown-menu-li{
-
-  padding: 3px;
-  font-size:small;
-  transition: background 0.3s ease, color 0.3s ease;
-  
-
-}
-.dropdown-menu-li::before {
-  content: "➤";  /* Unicode arrow character */
-  margin-right: 8px;
-  color: #4F46E5; /* Arrow color */
-  font-size: 14px;
-}
-
-.dropdown-menu-li:hover{
-  
-  cursor: pointer;
-  padding: 3px;
-  color: #4F46E5;
-  
-
-}
-
-/* Add Subject Details */
-
-/*  */
-.content-container {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.form-section {
-  display: flex;
-  flex-wrap: wrap; /* Enables wrapping for smaller screens */
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.form-input {
-  padding: 8px;
-  border-radius: 15px;
-  border: 2px solid #D1D0D0;
-  text-align: center;
-  width: 200px;
-  margin: 0;
-}
-
-.form-button {
-  padding: 10px;
-  width: 110px;
-  height: 40px;
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size: medium;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .form-input {
-    width: 100%; /* Full-width inputs on smaller screens */
-    margin-left: 0; /* Remove margin for alignment */
   }
 
-  .form-button {
-    width: 100%; /* Full-width buttons for better usability */
-  }
-
-  .form-section {
-    gap: 10px; /* Reduce gap for smaller screens */
-  }
-}
-
-
-/* Mainmenu */
-
-
-.Mainmenu-container{
-
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.Mainmenu-container-details{
-  display: flex;
-  position: absolute;
-  left: 40%;
-  top: 1%;
-  
-
-}
-.Mainmenu-container-details-1{
-
-  
-  height: 200px;
-  width: 200px;
-}
-.Mainmenu-container-details-1-p{
-
-  
-  
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  color:#747474;
-  position: absolute;
-  bottom: 55%;
-  left: 40%;
-  font-size: medium;
-  font-weight: bold;
-  width: 60%;
-  
-
-}
-
-.Mainmenu-container-details-2{
-
-  
-  height: 200px;
-  width: 200px;
-  left: 180%;
-  position: absolute;
-
-}
-.Mainmenu-container-details-2-p{
-
-  
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  color:black;
-  position: absolute;
-  bottom: 20%;
-  left: 28%;
-  font-size: larger;
-  font-weight: bold;
-  width: 60%;
-  
-}
-
-
-
-.report{
-
- 
-  height: 80px;
-  width: 110%;
-  margin: 30%;
-  margin-left: 20%;
-  position: relative;
-}
-.report-icon{
-
-  height: 100%;
-  width: 40%;
-  background-color: #3B82F6;
-  color: white;
-  position: absolute;
-  border-radius: 10px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
- 
-
-}
-
-.report-generator{
-
-  
-  height: 60%;
-  width:320%;
-  top: 180%;
-  left:5px;
-  position: absolute;
-  border-radius: 20px;
-  
-}
-.report-generator1{
-
-  background-color:blue;
-  height: 60%;
-  width:120%;
-  top: 180%;
-  right: 50%;
-  position: absolute;
-  border-radius: 20px;
-  /* margin-left: 30%; */
-}
-
-
-
-
-
-
-
-
-
-/* Search Teacher */
-
-.s-t-btn{
-  padding: 5px;
-  
-  height: 40px;
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size:small;
-  text-align: center;
-  cursor: pointer;
- 
-  margin-left: 5px;
-  margin-top: 20px;
- 
-  bottom: 5px;
-  
-}
-
-/* Subject to handle */
-
-
-/* General Container for Add New Teacher */
-.add-new-teacher-container {
-  margin-top: 20px;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  gap: 15px; /* Spacing between elements */
-}
-
-/* Title Styling */
-.add-new-teacher-title {
-  font-size: 24px;
-  text-align: center;
-  
-}
-
-/* Input Boxes for Teacher Information */
-.add-new-teacher-input {
-  width: 200px;
-  padding: 5px;
-  border: 2px solid #D1D0D0;
-  border-radius: 10px;
-  font-size: 14px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
-
-/* Table for Teacher Records */
-.add-new-teacher-table {
-  width: 110%;
-  border-collapse: collapse;
-  border: 2px solid #ccc; /* Light border */
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 60%;
-
-
-}
-
-
-.add-new-teacher-table tbody td {
-  padding: 7px;
-  text-align: center;
-}
-
-.add-new-teacher-table select {
-  width: 100%;
-  padding: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 12px;
-  box-sizing: border-box;
-  border: 2px solid #ccc; /* Light border */
-  border-radius: 6px;
-  display: flex;
-  font-weight: bold;
-  color: #747474;
-  
-}
-
-.a-n-t-btn{
-  padding: 10px;
-  
-  height: 40px;
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size: medium;
-  text-align: center;
-  cursor: pointer;
- 
-  margin-left: 20px;
-  margin-top: 20px;
- 
-  bottom: 5px;
-}
-.exam-records-title{
-
-  margin-left: 2%;
-  margin-top: 3%;
-}
-.time-input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Space between start and end time inputs */
-  max-width: 400px; /* Optional width for better layout */
-  margin: 0 auto; /* Center the container */
-}
-
-.time-input {
-  display: flex;
-  flex-direction: column;
-  gap: 5px; /* Space between label and input field */
-}
-
-label {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-input[type="time"] {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%; /* Full-width for better alignment */
-  box-sizing: border-box;
-}
-
-input[type="time"]:focus {
-  outline: none;
-  border-color: #4f46e5; /* Highlight color when focused */
-}
-
-
-/* Add Exams */
-
-/* General Container for Add New Exam */
-.add-new-Exam-container {
-  margin: 0; /* Removed margin */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  gap: 10px; /* Spacing between elements remains */
-  width: 90%; /* Ensure the container adapts to the window */
-
-}
-
-/* Title Styling */
-.add-new-teacher-title {
-  font-size: 24px; /* Font size unchanged */
-  text-align: center;
-  margin: 0; /* Removed margin */
-}
-
-/* Input Boxes for Exam Information */
-.add-new-teacher-input {
-  width: 200px;
-  padding: 5px;
-  border: 2px solid #D1D0D0;
-  border-radius: 10px;
-  font-size: 14px;
-  box-sizing: border-box;
-  margin: 0 auto; /* Removed margin */
-}
-
-/* Table for Exam Records */
-.add-new-Exam-table {
-  width: 100%;
-  max-width: 1200px; /* Max width remains */
-  border-collapse: collapse;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 0 auto; /* Removed margin */
-
-  margin-left: 10%;
-}
-
-.add-new-Exam-table thead th {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 8px; /* Padding remains */
-  font-size: 14px; /* Font size unchanged */
-  margin: 0; /* Removed margin */
-}
-
-.add-new-Exam-table tbody td {
-  padding: 5px; /* Padding remains */
-  text-align: center;
-  margin: 0; /* Removed margin */
-}
-
-/* Inputs inside the Table */
-.add-new-Exam-table input,
-.add-new-Exam-table select {
-  width: 90%;
-  padding: 4px; /* Padding remains */
-  font-size: 12px; /* Font size unchanged */
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin: 0; /* Removed margin */
-}
-
-/* Title Container */
-.add-new-Exam-title-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* Removed margin */
-  width: 100%;
-  max-width: 1200px; /* Max width remains */
-}
-
-/* Buttons */
-.a-n-t-btn {
-  padding: 10px; /* Padding remains */
-  height: 40px; /* Button height unchanged */
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size: medium; /* Font size unchanged */
-  text-align: center;
-  cursor: pointer;
-  margin: 5px 10px; /* Removed top/bottom margin */
-}
-
-.a-n-t-btn:hover {
-  background-color: #3730A3; /* Darker shade for hover effect */
-}
-
-/* Add Exam Title */
-.Add-exam-title {
-  margin: 0; /* Removed margin */
-  text-align: center;
-}
-
-/* Labels */
-.Add-exam-label {
-  width: 20%;
-  margin: 0; /* Removed margin */
-  text-align: left;
-  font-size: 14px; /* Font size unchanged */
-}
-
-/* Select Inputs */
-.add-new-Exam-table1 {
-  width: 90%;
-  padding: 2px; /* Padding remains */
-  font-size: 12px; /* Font size unchanged */
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin: 0; /* Removed margin */
-  
- 
-}
-
-/* View exam details */
-
-
-/* General Container for Add New Exam */
-.view-Exam-container {
-  margin: 0; /* Removed margin */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  gap: 10px; /* Spacing between elements remains */
-  width: 90%; /* Ensure the container adapts to the window */
-  margin-left: 15%;
-  margin-top: 10%;
-}
-
-/* Title Styling */
-.add-new-teacher-title {
-  font-size: 24px; /* Font size unchanged */
-  text-align: center;
-  margin: 0; /* Removed margin */
-}
-
-/* Input Boxes for Exam Information */
-.add-new-teacher-input {
-  width: 200px;
-  padding: 5px;
-  border: 2px solid #D1D0D0;
-  border-radius: 10px;
-  font-size: 14px;
-  box-sizing: border-box;
-  margin: 0 auto; /* Removed margin */
-}
-
-/* Table for Exam Records */
-.add-new-Exam-table {
-  width: 100%;
-  max-width: 1200px; /* Max width remains */
-  border-collapse: collapse;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 0 auto; /* Removed margin */
-
-  margin-left: 10%;
-}
-
-.add-new-Exam-table thead th {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 8px; /* Padding remains */
-  font-size: 14px; /* Font size unchanged */
-  margin: 0; /* Removed margin */
-}
-
-.add-new-Exam-table tbody td {
-  padding: 5px; /* Padding remains */
-  text-align: center;
-  margin: 0; /* Removed margin */
-}
-
-/* Inputs inside the Table */
-.add-new-Exam-table input,
-.add-new-Exam-table select {
-  width: 90%;
-  padding: 4px; /* Padding remains */
-  font-size: 12px; /* Font size unchanged */
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin: 0; /* Removed margin */
-}
-
-/* Title Container */
-.add-new-Exam-title-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* Removed margin */
-  width: 100%;
-  max-width: 1200px; /* Max width remains */
-}
-
-/* Buttons */
-.a-n-t-btn {
-  padding: 10px; /* Padding remains */
-  height: 40px; /* Button height unchanged */
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size: medium; /* Font size unchanged */
-  text-align: center;
-  cursor: pointer;
-  margin: 5px 10px; /* Removed top/bottom margin */
-}
-
-.a-n-t-btn:hover {
-  background-color: #3730A3; /* Darker shade for hover effect */
-}
-
-/* Add Exam Title */
-.Add-exam-title {
-  margin: 0; /* Removed margin */
-  text-align: center;
-}
-
-/* Labels */
-.Add-exam-label {
-  width: 20%;
-  margin: 0; /* Removed margin */
-  text-align: left;
-  font-size: 14px; /* Font size unchanged */
-}
-
-/* Select Inputs */
-.add-new-Exam-table1 {
-  width: 90%;
-  padding: 2px; /* Padding remains */
-  font-size: 12px; /* Font size unchanged */
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  margin: 0; /* Removed margin */
-  
- 
-}
-
-/* Add Announcements */
-
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.app {
-  padding: 20px;
-}
-
-/* Form styles */
-.form-container {
-  margin-bottom: 20px;
-}
-
-.input-field {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.send-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.send-button:hover {
-  background-color: #0056b3;
-}
-
-/* Cards container */
-.cards-container {
-  display: grid;
-  gap: 20px;
-}
-
-/* Card styles */
-.card {
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.card h3 {
-  margin-top: 0;
-}
-
-.card-actions {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.edit-button, .delete-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.edit-button:hover {
-  color: #007bff;
-}
-
-.delete-button:hover {
-  color: #dc3545;
-}
-
-
-/* View Announcement */
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: auto;
-}
-
-.form-container label {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.form-container input,
-.form-container textarea {
-  margin-top: 5px;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.form-container textarea {
-  resize: none;
-}
-
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-.submit-button {
-  background-color: blue;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-}
-
-.reset-button {
-  background-color: red;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-}
-
-/* Add Event */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-.event-form {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.event-form h2 {
-  text-align: center;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-.section h3 {
-  margin-bottom: 10px;
-}
-
-.event-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.event-form button {
-  display: block;
-  width: calc(100% - 20px);
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 4px;
-  border: none;
-}
-
-.event-form button:hover {
-  background-color: #0056b3;
-}
-
-/* view Events */
-
-.App {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-.search-bar {
-  margin-bottom: 10px;
-  padding: 5px;
-}
-
-.event-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.event-table th,
-.event-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.event-table th {
-  background-color: #f4f4f4;
-}
-
-.view-btn {
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 5px;
-}
-
-.edit-btn {
-  background-color: purple;
-  color: white;
-  border: none;
-  padding: 5px;
-}
-
-.delete-btn {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+/* Mainmenu */
+
+
+.Mainmenu-container{
+
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  .Mainmenu-container-details{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 1%;
+    
+  
+  }
+  .Mainmenu-container-details-1{
+  
+    
+    height: 200px;
+    width: 200px;
+  }
+  .Mainmenu-container-details-1-p{
+  
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color:#747474;
+    position: absolute;
+    bottom: 55%;
+    left: 40%;
+    font-size: medium;
+    font-weight: bold;
+    width: 60%;
+    
+  
+  }
+  
+  .Mainmenu-container-details-2{
+  
+    
+    height: 200px;
+    width: 200px;
+    left: 180%;
+    position: absolute;
+  
+  }
+  .Mainmenu-container-details-2-p{
+  
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color:black;
+    position: absolute;
+    bottom: 20%;
+    left: 28%;
+    font-size: larger;
+    font-weight: bold;
+    width: 60%;
+    
+  }
+  
+  
+  
+  .report{
+  
+   
+    height: 80px;
+    width: 110%;
+    margin: 30%;
+    margin-left: 20%;
+    position: relative;
+  }
+  .report-icon{
+  
+    height: 100%;
+    width: 40%;
+    background-color: #3B82F6;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+  
+  }
+  
+  .report-generator{
+  
+    
+    height: 60%;
+    width:320%;
+    top: 180%;
+    left:5px;
+    position: absolute;
+    border-radius: 20px;
+    
+  }
+  .report-generator1{
+  
+    background-color:blue;
+    height: 60%;
+    width:120%;
+    top: 180%;
+    right: 50%;
+    position: absolute;
+    border-radius: 20px;
+    /* margin-left: 30%; */
+  }
+  
+  
+  
+  

@@ -3,7 +3,7 @@ import React from "react";
 export default function Subject_to_Handle() {
   return (
     <>
-      <h1 className="exam-records-title">Add New Teacher</h1>
+      <h1 className="exam-records-title">Subject to handle</h1>
       <div className="add-new-teacher-container">
         <div className="add-new-teacher-title-2">
           <label>Unique Id:</label>
@@ -16,10 +16,12 @@ export default function Subject_to_Handle() {
           <input
             type="text"
             className="add-new-teacher-input"
-            placeholder="Unique Id"
+            placeholder="Teacher Name"
           />
         </div>
         <table className="add-new-teacher-table">
+          
+          
           <tbody>
             <tr>
               <td>

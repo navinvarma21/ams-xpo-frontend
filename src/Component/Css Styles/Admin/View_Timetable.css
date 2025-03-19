@@ -1,0 +1,62 @@
+/* General styles for the timetable */
+.timetable {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.timetable__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.timetable__container {
+  margin: auto;
+  width: 80%;
+}
+
+.timetable__table {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.timetable__header {
+  background-color: #f4f4f4;
+}
+
+.timetable__row {
+  height: auto; /* Adjust height dynamically */
+}
+
+.timetable__cell, .timetable__cell-head {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Set a consistent width for all cells */
+.timetable__cell {
+  width: auto; /* Adjust as necessary */
+}
+
+.timetable__cell-head {
+  width: auto; /* Adjust as necessary */
+  color:#4F46E5;
+}
+
+/* Specific styles for break and lunch cells */
+.timetable__cell--break {
+  background-color: #ffcccc; /* Light red for break */
+}
+
+.timetable__cell--lunch {
+  background-color: #ccffcc; /* Light green for lunch */
+}
+
+/* Additional styles (optional) */
+.timetable__cell:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+}

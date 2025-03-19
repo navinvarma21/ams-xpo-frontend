@@ -3,7 +3,7 @@ import React from "react";
 export default function View_Exam_Details() {
   return (
     <>
-      <h1>Add Subject Details</h1>
+      <h1>View Exam Details</h1>
       <div className="view-Exam-container">
         <table className="add-new-Exam-table">
           <tbody>

@@ -1,0 +1,50 @@
+
+/* view Events */
+
+.App {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table th,
+  .event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .event-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .view-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  
+  .edit-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  
+  

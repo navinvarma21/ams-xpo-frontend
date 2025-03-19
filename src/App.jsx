@@ -1,18 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
-
-
-
-
-
-
+// Login
 import Login from "./Component/Auth/Auth_pages/Login";
-import AdminDashboard from "./Component/dashboard/AdminDashboard";
-import TeacherDashboard from "./Component/dashboard/TeacherDashboard";
-import StudentDashboard from "./Component/dashboard/StudentDashboard";
-import ParentDashboard from "./Component/dashboard/ParentDashboard";
+// Admin
+import AdminDashboard from "./Component/pages/AdminDashboard/Admin-Pages/AdminDashboard";
 
+import TeacherDashboard from "./Component/pages/TeacherDashboard/TeacherDashboard";
+import StudentDashboard from "./Component/pages/StudentDashboard/StudentDashboard";
+import ParentDashboard from "./Component/pages/ParentDashboard/ParentDashboard";
 import Register from "./Component/Auth/Auth_pages/Register";
 
 function App() {
@@ -56,7 +51,7 @@ function App() {
 
 
 
-        <Route path="/teacher" element={<TeacherDashboard />} />
+        <Route path="/teacher" element={<TeacherDashboard/>} />
         <Route path="/student" element={< StudentDashboard/>} />
         <Route path="/parent" element={<ParentDashboard />} />
       </Routes>
