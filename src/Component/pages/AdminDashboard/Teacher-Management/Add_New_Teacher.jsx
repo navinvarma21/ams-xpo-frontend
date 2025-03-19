@@ -1,126 +1,126 @@
 import React from "react";
-
-export default function Add_New_Teacher() {
+function AddNewTeacher() {
   return (
     <>
-      <h1 className="exam-records-title">Add New Teacher</h1>
-      <div className="add-new-teacher-container">
-        <div className="add-new-teacher-title-2">
-          <label>Admission No:</label>
+      
+      <div className="add-teacher__container">
+      <h1 className="add-teacher__title">Add New Teacher</h1>
+        <div className="add-teacher__id-section">
+          <label className="add-teacher__label">Admission No:</label>
           <input
             type="text"
-            className="add-new-teacher-input"
+            className="add-teacher__input"
             placeholder="Admission No"
           />
-          <label>Unique Id:</label>
+          <label className="add-teacher__label">Unique Id:</label>
           <input
             type="text"
-            className="add-new-teacher-input"
+            className="add-teacher__input"
             placeholder="Unique Id"
           />
         </div>
-        <table className="add-new-teacher-table">
+        <table className="add-teacher__table">
           <tbody>
             <tr>
               <td>
-                <input placeholder="Teacher Name" />
+                <input className="add-teacher__input" placeholder="Teacher Name" />
               </td>
               <td>
-                <input placeholder="Department" />
+                <input className="add-teacher__input" placeholder="Department" />
               </td>
               <td>
-                <input placeholder="Joining Date" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input placeholder="DOB" />
-              </td>
-              <td>
-                <input placeholder="Address" />
-              </td>
-              <td>
-                <input placeholder="AADHAR Number" />
+                <input className="add-teacher__input" placeholder="Joining Date" />
               </td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Gender" />
+                <input className="add-teacher__input" placeholder="DOB" />
               </td>
               <td>
-                <input placeholder="Qualification" />
+                <input className="add-teacher__input" placeholder="Address" />
               </td>
               <td>
-                <input placeholder="PAN Number" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input placeholder="Contact Number" />
-              </td>
-              <td>
-                <input placeholder="Experience" />
-              </td>
-              <td>
-                <input placeholder="Blood Group" />
+                <input className="add-teacher__input" placeholder="AADHAR Number" />
               </td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Email" />
+                <input className="add-teacher__input" placeholder="Gender" />
               </td>
               <td>
-                <input placeholder="Subjects Taught" />
+                <input className="add-teacher__input" placeholder="Qualification" />
               </td>
               <td>
-                <input placeholder="Marital Status" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input placeholder="Caste" />
-              </td>
-              <td>
-                <input placeholder="Community" />
-              </td>
-              <td>
-                <input placeholder="Mother Tongue" />
+                <input className="add-teacher__input" placeholder="PAN Number" />
               </td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Subject Name" />
+                <input className="add-teacher__input" placeholder="Contact Number" />
               </td>
               <td>
-                <input placeholder="Nationality" />
+                <input className="add-teacher__input" placeholder="Experience" />
               </td>
               <td>
-                <input placeholder="District" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input placeholder="Current Position" />
-              </td>
-              <td>
-                <input placeholder="Salary Details" />
-              </td>
-              <td>
-                <input placeholder="Employee Type" />
+                <input className="add-teacher__input" placeholder="Blood Group" />
               </td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Notes" />
+                <input className="add-teacher__input" placeholder="Email" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Subjects Taught" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Marital Status" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input className="add-teacher__input" placeholder="Caste" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Community" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Mother Tongue" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input className="add-teacher__input" placeholder="Subject Name" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Nationality" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="District" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input className="add-teacher__input" placeholder="Current Position" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Salary Details" />
+              </td>
+              <td>
+                <input className="add-teacher__input" placeholder="Employee Type" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input className="add-teacher__input" placeholder="Notes" />
               </td>
 
-              <button type="button" className="a-n-t-btn">
+              <button type="button" className="add-teacher__button add-teacher__button--submit">
                 Submit
               </button>
 
               <button
                 type="button"
-                className="a-n-t-btn"
+                className="add-teacher__button add-teacher__button--reset"
                 style={{ backgroundColor: "red" }}
               >
                 Reset
@@ -132,3 +132,5 @@ export default function Add_New_Teacher() {
     </>
   );
 }
+
+export default AddNewTeacher;

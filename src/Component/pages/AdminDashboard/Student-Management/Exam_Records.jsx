@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function ExamRecords() {
   return (
     <>
@@ -153,7 +154,9 @@ export default function ExamRecords() {
           </tr>
         </tbody>
       </table>
+
     </div>
+  
       </div>
     </>
   );

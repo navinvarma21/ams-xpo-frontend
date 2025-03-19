@@ -222,7 +222,9 @@ ul {
 
 }
 
+/* Add Subject Details */
 
+/*  */
 .content-container {
   margin-top: 20px;
   margin-left: 10px;
@@ -404,103 +406,6 @@ ul {
 
 
 
-/* Add new Teachers */
-
-/* General Container for Add New Teacher */
-.add-new-teacher-container {
-  margin-top: 20px;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  gap: 15px; /* Spacing between elements */
-}
-
-/* Title Styling */
-.add-new-teacher-title {
-  font-size: 24px;
-  text-align: center;
-  
-}
-
-/* Input Boxes for Teacher Information */
-.add-new-teacher-input {
-  width: 200px;
-  padding: 5px;
-  border: 2px solid #D1D0D0;
-  border-radius: 10px;
-  font-size: 14px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
-
-/* Table for Teacher Records */
-.add-new-teacher-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 2px solid #ccc; /* Light border */
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 60%;
-
-}
-
-.add-new-teacher-table thead th {
-  background-color: #f1f1f1; /* Light gray background for header */
-  text-align: center;
-  padding: 8px; /* Compact padding */
-  font-size: 14px;
-  
-}
-
-.add-new-teacher-table tbody td {
-  padding: 5px;
-  text-align: center;
-}
-
-.add-new-teacher-table input {
-  width: 90%;
-  padding: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 12px;
-  box-sizing: border-box;
-  border: 2px solid #ccc; /* Light border */
-  border-radius: 6px;
-}
-.add-new-teacher-title-2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 60%;
-  width: 100%;
-}
-.a-n-t-btn{
-  padding: 10px;
-  
-  height: 40px;
-  background-color: #4F46E5;
-  color: white;
-  font-weight: 300;
-  border: none;
-  border-radius: 5px;
-  font-size: medium;
-  text-align: center;
-  cursor: pointer;
- 
-  margin-left: 20px;
-  margin-top: 20px;
- 
-  bottom: 5px;
-}
-.exam-records-title{
-
-  margin-left: 2%;
-  margin-top: 3%;
-}
 
 /* Search Teacher */
 
