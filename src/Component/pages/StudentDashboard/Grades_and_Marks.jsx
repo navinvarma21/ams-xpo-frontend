@@ -130,7 +130,7 @@ export default function Grades_and_Marks() {
         </div>
 
         <div className="pie_chart">
-          <PieChart width={750} height={390}>
+          <PieChart className="pie_chart_1" width={750} height={390}>
             
             <Pie
               dataKey="value"
