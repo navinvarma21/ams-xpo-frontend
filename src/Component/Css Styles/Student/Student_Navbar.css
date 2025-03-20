@@ -1,0 +1,147 @@
+/* General styling */
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-right: 77%;
+  }
+  
+  /* Navigation bar */
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    
+  }
+  
+  .navigation-btn-1 {
+    background-color:#3FD267;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15%;
+  }
+  
+  .navigation-btn-2 {
+    background-color: #50C4EF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15%;
+  }
+
+  .navigation-btn-3 {
+    background-color: #FFBB01;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15%;
+  }
+  
+  .navigation-btn-4 {
+    background-color: #FFFFFF;
+    color: black;
+   
+    padding: 10px;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 15px;
+    width: 15%;
+  }
+  
+  .navigation-btn-5 {
+    background-color: #8C52FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15%;
+  }
+  
+  .navigation-btn-6 {
+    background-color:#FF3131;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 15%;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  /* Grades section */
+  .grades-section {
+    /* margin-top: 20px; */
+    width: 100%;
+    height: 62vh;
+    border: 1px solid black;
+
+  }
+  
+  .grades-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grades-header label {
+    font-weight: bold;
+  }
+  
+  .grades-header span {
+    font-weight: bold;
+  }
+  
+  /* Table styling */
+  .grades-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .grades-table th,
+  .grades-table td {
+    border: solid #ddd thin;
+    padding: 10px;
+  }
+  
+  .grades-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .total-row td {
+    font-weight: bold;
+  }
+  
+  /* Charts placeholder */
+  .charts {
+    margin-top: 20px;
+  }
+  
