@@ -8,13 +8,7 @@ import Events from "../pages/StudentDashboard/Events";
 import Exam_details from "../pages/StudentDashboard/Exam_details";
 
 
-// // Example components for each button action
-// const GradesMarks = () => <div>Grades/Marks Content1111</div>;
-// const Attendance = () => <div>Attendance Content</div>;
-// const Timetable = () => <div>View Timetable Content</div>;
-// const Announcements = () => <div>Announcements Content</div>;
-// const Events = () => <div>Events Content</div>;
-// const ExamDetails = () => <div>Exam Details Content</div>;
+
 
 export default function Student_Navbar() {
   const [activeComponent, setActiveComponent] = useState(null); // Track active component

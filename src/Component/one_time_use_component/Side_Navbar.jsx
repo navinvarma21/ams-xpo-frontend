@@ -26,7 +26,7 @@ export default function SideNavbar({ setActiveComponent }) {
     ],
     3: [
       { label: "Add Announcements", component: "Add_Announcements" },
-      { label: "View Announcements", component: "View_Announcements" },
+      { label: "Edit Announcements", component: "View_Announcements" },
     ],
     4: [
       { label: "Add Events", component: "Add_Events" },

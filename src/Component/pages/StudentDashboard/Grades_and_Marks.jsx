@@ -11,11 +11,11 @@ import {
 } from "recharts";
 
 const data01 = [
-  { name: "Tamil", value: 95 },
+  { name: "Tamil", value: 65 },
   { name: "English", value: 93 },
   { name: "Maths", value: 90 },
-  { name: "Science", value: 97 },
-  { name: "Social Science", value: 90 },
+  { name: "Science", value: 76 },
+  { name: "Social Science", value: 60 },
   { name: "Moral Science", value: 96 },
 ];
 
