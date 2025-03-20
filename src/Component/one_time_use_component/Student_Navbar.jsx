@@ -1,14 +1,20 @@
 import React, { useState } from "react"; // Include useState for state management
 import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 import Grades_and_Marks from "../pages/StudentDashboard/Grades_and_Marks";
+import Attendance_Student_and_parent from "../pages/StudentDashboard/Attendance_Student_and_parent";
+import Timetable_student_and_parent from "../pages/StudentDashboard/Timetable_student_and_parent";
+import Announcements from "../pages/StudentDashboard/Announcements";
+import Events from "../pages/StudentDashboard/Events";
+import Exam_details from "../pages/StudentDashboard/Exam_details";
 
-// Example components for each button action
-const GradesMarks = () => <div>Grades/Marks Content1111</div>;
-const Attendance = () => <div>Attendance Content</div>;
-const Timetable = () => <div>View Timetable Content</div>;
-const Announcements = () => <div>Announcements Content</div>;
-const Events = () => <div>Events Content</div>;
-const ExamDetails = () => <div>Exam Details Content</div>;
+
+// // Example components for each button action
+// const GradesMarks = () => <div>Grades/Marks Content1111</div>;
+// const Attendance = () => <div>Attendance Content</div>;
+// const Timetable = () => <div>View Timetable Content</div>;
+// const Announcements = () => <div>Announcements Content</div>;
+// const Events = () => <div>Events Content</div>;
+// const ExamDetails = () => <div>Exam Details Content</div>;
 
 export default function Student_Navbar() {
   const [activeComponent, setActiveComponent] = useState(null); // Track active component
@@ -19,7 +25,7 @@ export default function Student_Navbar() {
     { label: "View Timetable", component: "Timetable" },
     { label: "Announcements", component: "Announcements" },
     { label: "Events", component: "Events" },
-    { label: "Exam Details", component: "ExamDetails" },
+    { label: "Exam Details", component: "Exam_details" },
   ];
 
   const renderComponent = () => {
@@ -27,15 +33,15 @@ export default function Student_Navbar() {
       case "GradesMarks":
         return <Grades_and_Marks/>;
       case "Attendance":
-        return <Attendance />;
+        return <Attendance_Student_and_parent/>;
       case "Timetable":
-        return <Timetable />;
+        return <Timetable_student_and_parent/>;
       case "Announcements":
-        return <Announcements />;
+        return <Announcements/>;
       case "Events":
-        return <Events />;
-      case "ExamDetails":
-        return <ExamDetails />;
+        return <Events/>;
+      case "Exam_details":
+        return <Exam_details/>;
       default:
         return <div>Welcome! Select an option above.</div>;
     }
@@ -44,7 +50,7 @@ export default function Student_Navbar() {
   return (
     <div className="container">
       <header>
-        <h1>Welcome Student Name</h1>
+        <h4>Welcome Student Name</h4>
       </header>
 
       <nav className="navigation">

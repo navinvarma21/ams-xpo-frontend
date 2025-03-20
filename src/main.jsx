@@ -26,7 +26,7 @@ import "./Component/Css Styles/Admin_and_Teacher/View_Events.css"
 // Student
 
 import "./Component/Css Styles/Student/Student_Navbar.css"
-
+import "./Component/Css Styles/Student/Grades_and_Marks.css"
 
 
 

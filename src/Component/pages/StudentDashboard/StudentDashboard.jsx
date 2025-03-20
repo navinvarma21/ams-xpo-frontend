@@ -41,22 +41,7 @@ export default function StudentDashboard() {
   // Mapping components to specific animations
   const animationMap = {
     Add_Subject_Details: animations.fadeInZoom,
-    Attendance: animations.fadeInZoom,
-    ViewAttendance: animations.fadeInZoom,
-    Subject_and_Grades: animations.fadeInZoom,
-    Subject_and_Grades_10to12: animations.fadeInZoom,
-    Exam_Records: animations.fadeInZoom,
-    Add_New_Teacher: animations.fadeInZoom,
-    Search_Teacher: animations.fadeInZoom,
-    Subject_to_Handle: animations.fadeInZoom,
-    Timetable: animations.fadeInZoom,
-    Add_Exams: animations.fadeInZoom,
-    View_Exam_Details: animations.fadeInZoom,
-    Add_Announcements: animations.fadeInZoom,
-    View_Announcements: animations.fadeInZoom,
-    Add_Events: animations.fadeInZoom,
-    View_Events: animations.fadeInZoom,
-    Mainmenu: animations.fadeInZoom, // Default animation
+    Exam_Records:animations.fadeInZoom
   };
 
   // Function to handle rendering a specific component
