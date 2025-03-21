@@ -146,9 +146,9 @@ export default function Add_Events() {
     <>
     
     <div>
-   
+    <h2 className="Add__Event__title">Add Events</h2>
       <form className="event-form">
-      <h2>Add Events</h2>
+     
         {renderFormSection()}
 
         <div className="buttons">

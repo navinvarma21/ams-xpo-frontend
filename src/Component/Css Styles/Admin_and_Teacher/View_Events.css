@@ -1,50 +1,98 @@
 
-/* view Events */
+/* ViewEvents.css */
 
-.App {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
+.view-events-container {
+  width: 100%;
+  margin: auto;
+  font-family: Arial, sans-serif;
   
-  .search-bar {
-    margin-bottom: 10px;
-    padding: 5px;
-  }
+  margin-left: 5%;
+}
+
+
+.view-events-title {
+  font-size: 32px;
+  text-align: left; /* Align title to the left */
+  margin-left: 2%; /* Reset margin for the title */
+  margin-top: 3%;
+}
   
-  .event-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .event-table th,
-  .event-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .event-table th {
-    background-color: #f4f4f4;
-  }
-  
-  .view-btn {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 5px;
-  }
-  
-  .edit-btn {
-    background-color: purple;
-    color: white;
-    border: none;
-    padding: 5px;
-  }
-  
-  .delete-btn {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px;
-  }
-  
-  
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-label {
+  margin-right: 10px;
+}
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.events-table th,
+.events-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.events-table th {
+  background-color: #f4f4f4;
+}
+
+.events-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.events-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.open-button {
+  background-color: #6c63ff; /* Purple color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button:hover {
+  background-color: #574bdb; /* Darker purple */
+}
+
+.open-button-edit {
+  background-color: #6c63ff; /* Purple color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button:hover {
+  background-color: #574bdb; /* Darker purple */
+}
+
+.open-button-delete {
+  background-color: #FF0000; /* Purple color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button:hover {
+  background-color: #574bdb; /* Darker purple */
+}
