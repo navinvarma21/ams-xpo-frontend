@@ -23,6 +23,7 @@ import "./Component/Css Styles/Admin_and_Teacher/View_Announcements.css"
 import "./Component/Css Styles/Admin_and_Teacher/Add_Events.css"
 import "./Component/Css Styles/Admin_and_Teacher/View_Events.css"
 import "./Component/Css Styles/Admin_and_Teacher/Subject_and_Grades_10to12.css"
+import "./Component/Css Styles/Admin_and_Teacher/Teacher_Mainmenu.css"
 
 
 

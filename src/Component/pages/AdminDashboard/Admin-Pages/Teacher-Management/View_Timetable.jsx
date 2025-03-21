@@ -4,8 +4,9 @@ import React from "react";
 
 export default function ViewTimetable() {
   return (
+    <><h1 className="View_timetable__title">View Timetable</h1>
     <div className="timetable__container">
-      <h1 className="timetable__title">View Timetable</h1>
+      
       <table
         className="timetable__table"
         border="1"
@@ -137,5 +138,6 @@ export default function ViewTimetable() {
         </tbody>
       </table>
     </div>
+    </>
   );
 }

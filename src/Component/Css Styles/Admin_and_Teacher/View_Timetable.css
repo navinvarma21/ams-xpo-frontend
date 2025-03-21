@@ -5,11 +5,11 @@
   width: 100%;
 }
 
-.timetable__title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
+.View_timetable__title{
+  
+  margin: 1%;
+  font-size: 32px;
+  
 }
 
 .timetable__container {
