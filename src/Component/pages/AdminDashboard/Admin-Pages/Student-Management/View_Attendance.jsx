@@ -7,6 +7,7 @@ export default function ViewAttendance() {
   return (
     <div className="view-attendance">
       <h1>View Attendance</h1>
+      <div className="Attendance-container">
       <div className="view-attendance__header">
         
         <input
@@ -39,7 +40,7 @@ export default function ViewAttendance() {
         </select>
       </div>
 
-      <div className="view-attendance__search">
+      {/* <div className="view-attendance__search">
         <input
           type="text"
           name="search"
@@ -47,7 +48,7 @@ export default function ViewAttendance() {
           required
           className="view-attendance__input-search"
         />
-      </div>
+      </div> */}
 
       <div className="view-attendance__table-header">
         <p className="view-attendance__table-column">Today Date</p>
@@ -55,6 +56,7 @@ export default function ViewAttendance() {
         <p className="view-attendance__table-column">Student Name</p>
         <p className="view-attendance__table-column">Status</p>
         <p className="view-attendance__table-column">Remarks</p>
+      </div>
       </div>
     </div>
   );
