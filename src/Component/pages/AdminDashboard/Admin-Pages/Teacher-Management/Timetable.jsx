@@ -68,8 +68,10 @@ const Timetable = () => {
   };
 
   return (
+    <>
+    <h1 className="timetable__title">Add Timetable</h1>
     <div className="timetable-container">
-      <h1 className="timetable__title">Add Timetable</h1>
+      
 
       <div className="schedule-form">
         <div className="timetable-form">
@@ -340,22 +342,23 @@ const Timetable = () => {
           )}
 
           {/* Navigation Buttons */}
-          <button type="button" onClick={handlePrevious} disabled={currentStep === 1}>
+          <button className="btn-timetable" type="button" onClick={handlePrevious} disabled={currentStep === 1}>
             Previous
           </button>
 
           {currentStep < 7 ? (
-            <button type="button" onClick={handleNext}>
+            <button className="btn-timetable" type="button" onClick={handleNext}>
               Next
             </button>
           ) : (
-            <button type="button" onClick={handleSubmit}>
+            <button className="btn-timetable" type="button" onClick={handleSubmit}>
               Submit
             </button>
           )}
         </div>
       </div>
     </div>
+    </>
   );
 };
 

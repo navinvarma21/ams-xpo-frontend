@@ -66,6 +66,14 @@
   .timetable-container{
 
     margin-top: 20px;
-    margin-left: 10%;
+    margin-left: 60%;
     width: 100%;
+    
+  }
+  .btn-timetable{
+
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
   }
