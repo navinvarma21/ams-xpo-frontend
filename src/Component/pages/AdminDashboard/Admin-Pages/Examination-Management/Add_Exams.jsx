@@ -3,9 +3,9 @@ import React from "react";
 export default function Add_Exams() {
   return (
     <>
-    <h2>Add Exams</h2>
+     <h2 className="Add_Exam__title">Add Exams</h2>
     <div className="add-new-Exam-container">
-
+   
       <div className="form-scrollable-container">
         <div className="form-grid">
           {/* Exam Name and Standard */}

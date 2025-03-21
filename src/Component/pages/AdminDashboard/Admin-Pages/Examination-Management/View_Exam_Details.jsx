@@ -3,8 +3,9 @@ import React from "react";
 export default function View_Exam_Details() {
   return (
     <>
-      <h1>View Exam Details</h1>
+      <h1 className="View_Exam__title">View Exam Details</h1>
       <div className="view-Exam-container">
+      
         <div className="exam-details-grid">
           {/* Column 1 */}
           <div>

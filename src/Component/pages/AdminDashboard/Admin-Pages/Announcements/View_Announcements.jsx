@@ -3,8 +3,9 @@ import React from "react";
 export default function View_Announcements() {
   return (
     <>
-      <h1>Edit Announcements</h1>{" "}
+      <h1 className="View__Announcements__title">Edit Announcements</h1>{" "}
       <div className="Edit-Announcement-container">
+      
         <form className="form-container">
           <label htmlFor="headline">Enter Headline:</label>
           <input type="text" id="headline" placeholder="Enter Headline" />

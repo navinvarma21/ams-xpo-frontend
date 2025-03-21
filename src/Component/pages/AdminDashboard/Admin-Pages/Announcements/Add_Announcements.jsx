@@ -3,9 +3,9 @@ import React from "react";
 export default function Add_Announcements() {
   return (
     <>
-      <h1>Add Announcements</h1>
+      <h1 className="Add__Announcements__title">Add Announcements</h1>
       <div className="Add_Announcements">
-        
+      
         {/* Input Form */}
         <div className="form-container">
           <input

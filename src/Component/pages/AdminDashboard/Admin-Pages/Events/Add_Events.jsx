@@ -143,10 +143,12 @@ export default function Add_Events() {
   }
 
   return (
+    <>
+    
     <div>
-      <h2>Add Events</h2>
+   
       <form className="event-form">
-        
+      <h2>Add Events</h2>
         {renderFormSection()}
 
         <div className="buttons">
@@ -164,5 +166,6 @@ export default function Add_Events() {
         </div>
       </form>
     </div>
+    </>
   )
 }

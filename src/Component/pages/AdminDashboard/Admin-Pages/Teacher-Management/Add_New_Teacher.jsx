@@ -2,9 +2,9 @@ import React from "react";
 function AddNewTeacher() {
   return (
     <>
-      
+       <h1 className="add-teacher__title">Add New Teacher</h1>
       <div className="add-teacher__container">
-      <h1 className="add-teacher__title">Add New Teacher</h1>
+     
         <div className="add-teacher__id-section">
           <label className="add-teacher__label">Admission No:</label>
           <input

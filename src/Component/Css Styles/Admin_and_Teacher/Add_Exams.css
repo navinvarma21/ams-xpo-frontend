@@ -1,5 +1,13 @@
 /* Add Exams */
 
+
+.Add_Exam__title{
+  font-size: 32px;
+  text-align: left; /* Align title to the left */
+  margin-left: 2%; /* Reset margin for the title */
+  margin-top: 3%;
+}
+  
 /* General Container for Add New Exam */
 .add-new-Exam-container {
   margin: 20px auto;

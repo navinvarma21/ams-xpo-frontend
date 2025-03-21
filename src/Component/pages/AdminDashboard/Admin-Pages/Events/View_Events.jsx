@@ -2,9 +2,12 @@ import React from 'react'
 
 export default function View_Events() {
   return (
+    <>
+    
     <div>
+    <h1>Event Table</h1>
       <div className="App">
-        <h1>Event Table</h1>
+       
         <input type="text" placeholder="Search Event:" className="search-bar" />
   
         <table className="event-table">
@@ -45,5 +48,6 @@ export default function View_Events() {
           </tbody>
         </table>
       </div></div>
+      </>
   )
 }

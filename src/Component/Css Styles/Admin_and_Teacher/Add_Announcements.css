@@ -2,6 +2,14 @@
 
 /* Add Announcements */
 
+
+.Add__Announcements__title{
+  font-size: 32px;
+  text-align: left; /* Align title to the left */
+  margin-left: 2%; /* Reset margin for the title */
+  margin-top: 3%;
+}
+  
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -83,7 +91,7 @@ body {
   /* Scrollable Cards Container */
 .cards-container {
   width: 100%; /* Set the width of the container */
-  height: 200px; /* Set the height of the container */
+  height: 150px; /* Set the height of the container */
   overflow-y: auto; /* Enable vertical scrolling */
   border: 1px solid #ccc; /* Add a border for visual clarity */
   border-radius: 8px; /* Rounded corners */
