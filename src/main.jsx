@@ -32,6 +32,11 @@ import "./Component/Css Styles/Admin_and_Teacher/Teacher_Mainmenu.css"
 import "./Component/Css Styles/Student/Student_Navbar.css"
 import "./Component/Css Styles/Student/Grades_and_Marks.css"
 
+// Parent
+
+import "./Component/Css Styles/Parent/Parent_Navbar.css"
+
+
 
 
 createRoot(document.getElementById('root')).render(
