@@ -3,6 +3,8 @@
     font-family: sans-serif;
     padding: 20px;
     width: 100%;
+    margin-left: 35%;
+    
      }
   
   
@@ -12,6 +14,7 @@
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 5px;
+    position: relative;
     
   }
 
@@ -148,5 +151,39 @@
     width: 100%;
     position: absolute;
     right: 30%;
-    background-color: red;
+    
+    
   }
+
+
+.multi-step-form {
+  position: relative;
+  width: 92%;
+  
+
+}
+
+.form-step {
+  height: 100%;
+  padding: 20px;
+}
+
+.form-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 90%;
+  gap: 10px;
+  width: 40%;
+  
+  
+}
+
+.form-navigation button {
+  padding: 8px 16px;
+  background: #2D8BBA;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
