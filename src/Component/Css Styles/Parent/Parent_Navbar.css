@@ -6,14 +6,14 @@ body {
   .container-1{
     display: flex;
     height: 82vh;
-    width: 75%;
+    width: 90%;
   }
   
   .sidebar {
     width: 20%;
     background-color:white;
     color: white;
-    padding: 40px;
+    padding: 15px;
     height: 76vh;
     
   }
@@ -26,21 +26,23 @@ body {
   
   .sidebar button {
     display: block;
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 12px;
     margin-bottom: 10px;
     background-color: #5A4FCF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 26px;
+    margin-top: 30px;
   }
   
  
   .main-content {
     flex-grow: 1;
-    padding: 20px;
+    padding: 1px;
+    margin-top: 1%;
+    
   }
   
   .header {
