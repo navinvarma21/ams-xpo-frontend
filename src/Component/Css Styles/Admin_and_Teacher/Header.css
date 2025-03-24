@@ -28,4 +28,7 @@
   .Header-Container{
     border-bottom: 1px solid #D1D0D0;
   }
-  
+  .Header-Container {
+    border-bottom: 1px solid #D1D0D0; /* Existing border style */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow added */
+  }
