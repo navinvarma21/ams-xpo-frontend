@@ -45,7 +45,7 @@ const Login = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundImage: "url('public/loginpage.jpg')",
+          backgroundImage: "url('public/images/loginpage.jpg')",
           backgroundSize: "contain", // Updated for fitting the image
           backgroundRepeat: "no-repeat", // Added to prevent image repetition
           backgroundPosition: "center", // Centers the image
