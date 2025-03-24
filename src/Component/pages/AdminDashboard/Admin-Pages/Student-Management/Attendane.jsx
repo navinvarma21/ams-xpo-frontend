@@ -22,7 +22,7 @@ export default function Attendance() {
             className="attendance__input-dropdown"
           >
             <option value="" disabled selected>
-              Select Standard
+              Standard
             </option>
             {[...Array(12)].map((_, i) => (
               <option key={i} value={`${i + 1}th`}>
@@ -35,7 +35,7 @@ export default function Attendance() {
             required
             className="attendance__input-dropdown"
           >
-            <option value="section" disabled selected>
+            <option value="" disabled selected>
               Section
             </option>
             <option value="A">A</option>
@@ -44,15 +44,14 @@ export default function Attendance() {
           </select>
         </div>
 
-        {/* <div className="attendance__search">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search"
-          required
-          className="attendance__input-search"
-        />
-      </div> */}
+        <div className="attendance__search">
+          <label>Search:</label>
+          <input
+            type="search"
+            placeholder="search"
+            className="attendance__input-search"
+          />
+        </div>
 
         <div className="attendance__table-header">
           <p className="attendance__table-column">Today Date</p>
@@ -60,6 +59,20 @@ export default function Attendance() {
           <p className="attendance__table-column">Student Name</p>
           <p className="attendance__table-column">Status</p>
           <p className="attendance__table-column">Remarks</p>
+        </div>
+
+        {/* Input Row for Attendance */}
+        <div className="attendance__input-row">
+          <input type="date" className="attendance__input" />
+          <input type="text" placeholder="Roll No" className="attendance__input" />
+          <input type="text" placeholder="Student Name" className="attendance__input" />
+          <select name="status" required className="attendance__input-dropdown">
+            <option value="" disabled selected>Select Status</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Leave">Leave</option>
+          </select>
+          <input type="text" placeholder="Add Remarks..." className="attendance__input" />
         </div>
       </div>
     </div>

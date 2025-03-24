@@ -62,13 +62,13 @@ export default function Subject_and_Grades_1to9() {
               <option value="B">B</option>
               <option value="C">C</option>
             </select>
-            <button
+            {/* <button
               type="button"
               className="subject-grades__view-button"
               onClick={() => setViewMode(true)}
             >
               View Exam Record
-            </button>
+            </button> */}
           </div>
         </div>
 

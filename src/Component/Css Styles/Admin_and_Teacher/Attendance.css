@@ -1,178 +1,158 @@
+/* Attendance */
 .attendance {
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-  
-  .attendance__header {
-    display: flex;
-    width: 100%;
-  }
-  
-  .attendance__input-date {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    text-align: center;
-    margin: 0;
-    margin-left: 20%;
-  }
-  
-.Attendance-container{
+  margin-top: 20px;
+  margin-left: 10px;
+}
 
-  margin-left: 20%;
-  width: 100%;
+/* Align header elements horizontally */
+.attendance__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+/* Style for date input */
+.attendance__input-date {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px; /* Add some space after the date input */
+}
+
+/* Style for export button */
+.attendance__btn-export {
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some space after the export button */
+}
+
+/* Style for dropdowns */
+.attendance__input-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  margin-right: 10px; /* Add some space after the dropdown */
+}
+
+/* Container for all attendance related elements */
+.Attendance-container {
+  margin-left: 10px;
+  width: 95%;
   margin-top: 3%;
 }
-  .attendance__btn-export {
-    padding: 10px;
-    width: 110px;
-    height: 40px;
-    background-color: white;
-    color: black;
-    font-weight: 300;
-    border: 2px solid #D1D0D0;
-    border-radius: 5px;
-    font-size: medium;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 3%;
-  }
-  
-  .attendance__input-dropdown {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    text-align: center;
-    margin: 0;
-    margin-left: 20px;
-  }
-  
-  .attendance__search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    margin-top: 6%;
-  }
-  
-  .attendance__input-search {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    position: absolute;
-    width: 30%;
-    margin: 0;
-    margin-left: 20px;
-    right: 60%;
-  }
-  
-  .attendance__table-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 120%;
-    margin-top: 6%;
-    font-weight: 300;
-    border-bottom: 1px solid #D1D0D0;
-    padding-bottom: 10px;
-    margin-left: 10%;
-  }
-  
-  .attendance__table-column {
-    font-weight: bold;
-    margin-left: 5%;
-    display: flex;
-  }
-  
-  /* view Attendance */
 
-  .view-attendance {
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-  
-  .view-attendance__header {
-    display: flex;
-  }
-  
-  .view-attendance__input-date {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    text-align: center;
-    margin: 0;
-    margin-left: 20%;
-  }
-  
-  .view-attendance__btn-export {
-    padding: 10px;
-    width: 110px;
-    height: 40px;
-    background-color: white;
-    color: black;
-    font-weight: 300;
-    border: 2px solid #D1D0D0;
-    border-radius: 5px;
-    font-size: medium;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 3%;
-  }
-  
-  .view-attendance__input-dropdown {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    text-align: center;
-    margin: 0;
-    margin-left: 20px;
-  }
-  
-  .view-attendance__search {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    margin-top: 6%;
-  }
-  
-  .view-attendance__input-search {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #D1D0D0;
-    position: absolute;
-    width: 30%;
-    margin: 0;
-    margin-left: 20px;
-    right: 60%;
-  }
-  
-  .view-attendance__table-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 120%;
-    margin-top: 6%;
-    font-weight: 300;
-    border-bottom: 1px solid #D1D0D0;
-    padding-bottom: 10px;
-    margin-left: 10%;
-  }
-  
-  .view-attendance__table-column {
-    font-weight: bold;
-    margin-left: 5%;
-    display: flex;
-  }
-  .attendance__header{
+/* Style for the search input */
+.attendance__search {
+  margin-top: 20px; 
+  border-radius: 20px;/* Add some space above the search input */
+}
 
-    display: flex;
-  }
+/* Style for the search input field */
+.attendance__input-search {
+  padding: 8px;
+  border-radius: 5px;
+  border-radius: 20px;
+  border: 1px solid #D1D0D0;
+  margin-left: 5px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+/* Style for the table header */
+.attendance__table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #D1D0D0;
+  margin-top: 20px;
+  margin-left: 9%;
+  width: 100%;
+}
+
+/* Style for each table column */
+
+/* Style for the input row */
+.attendance__input-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+  margin-left: 10%;
+}
+.attendance__table-column {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  
+  width: 100%;
+}
+
+
+/* Style for each input */
+.attendance__input {
+  flex: 1;
+  padding: 8px;
+  
+  border-radius: 20px;
+  border: 1px solid #D1D0D0;
+  margin: 2px;
+}
+
+/* Style for dropdowns in the input row */
+.attendance__input-row .attendance__input-dropdown {
+  flex: 1;
+  
+}
+
+
+/* Adjust width for small inputs (Date, Roll No) */
+.attendance__input-small {
+  width: 70px; /* Adjust as needed */
+}
+
+/* Adjust width for medium inputs (Student Name) */
+.attendance__input-medium {
+  width: 120px; /* Adjust as needed */
+}
+
+/* Adjust width for remarks input */
+.attendance__input-remarks {
+  width: 150px; /* Adjust as needed */
+}
+
+/* Adjust width for status dropdown */
+.attendance__input-status {
+  width: 100px; /* Adjust as needed */
+}
+
+/* Style for action buttons */
+.attendance__action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* Style for edit button */
+.attendance__edit-button {
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for delete button */
+.attendance__delete-button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -84,6 +84,7 @@
   .subject-grades__marks-table-container {
     overflow-x: auto;
     display: flex;
+    width: 100%;
   }
   
   .subject-grades__marks-table {
@@ -94,7 +95,7 @@
   .subject-grades__marks-table th,
   .subject-grades__marks-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 6.5px;
     text-align: center;
   }
   

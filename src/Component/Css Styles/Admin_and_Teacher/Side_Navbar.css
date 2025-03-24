@@ -23,9 +23,9 @@
   box-shadow: none !important;
   outline: none !important;
   align-items: center;
-
+  margin-left: 2%;
   border-radius: 10px;
-  width: 100%;
+  width: 96%;
 }
 .side-Navbar-container-heading:hover {
   cursor: pointer;

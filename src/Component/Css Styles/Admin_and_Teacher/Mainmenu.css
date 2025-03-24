@@ -58,7 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
     color:black;
     position: absolute;
     bottom: 20%;
@@ -162,16 +162,16 @@
 .generate-button {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: white;
+  color: #473FCE;
   border: none;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-.generate-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
+
 .finance{
 
   margin-bottom:13%;
 }
+
