@@ -1,0 +1,72 @@
+/* General styles for the timetable */
+.timetable_sp {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .View_timetable__title_sp{
+    
+    margin: 1%;
+    font-size: 32px;
+    
+  }
+  
+  .timetable__container_sp {
+    margin: auto;
+    width: 80%;
+  }
+  
+  .timetable__table_sp {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
+  .timetable__header_sp {
+    background-color: #f4f4f4;
+  }
+  
+  .timetable__row_sp {
+    height: auto; /* Adjust height dynamically */
+  }
+  
+  .timetable__cell_sp, .timetable__cell-head_sp {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 13px;
+ 
+   
+  }
+  
+  /* Set a consistent width for all cells */
+  .timetable__cell_sp {
+    width: auto; /* Adjust as necessary */
+  }
+  
+  .timetable__cell-head_sp {
+    width: auto; /* Adjust as necessary */
+    color:#4F46E5;
+  }
+  
+  /* Specific styles for break and lunch cells */
+  .timetable__cell--break_sp {
+    background-color: #ffcccc; /* Light red for break */
+  }
+  
+  .timetable__cell--lunch_sp {
+    background-color: #ccffcc; /* Light green for lunch */
+  }
+  
+  /* Additional styles (optional) */
+  .timetable__cell_sp:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+  }
+.timetable__container_title_sp{
+
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-left: 1%;
+}

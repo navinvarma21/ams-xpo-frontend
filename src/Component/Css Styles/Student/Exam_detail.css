@@ -1,0 +1,44 @@
+.exam-details-container {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+}
+
+.exam-details-container h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.exam-details-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-left: 6px;
+ 
+}
+
+.exam-details-container .header label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.exam-details-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exam-details-container table td {
+  padding: 5px;
+  text-align: left;
+  
+  font-size: 14px;
+  border: none;
+}
+.exam-details-title{
+
+    font-size:large;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}

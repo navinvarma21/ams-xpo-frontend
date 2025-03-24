@@ -1,0 +1,130 @@
+/* Announcements */
+.Announcements__title-1_s_and_t {
+    font-size:large;
+   
+    margin-top: 2%;
+    margin-left: 1%;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .Announcements_s_and_t {
+    padding: 20px;
+    margin: auto; /* Center the component horizontally */
+    width: 60%; /* Adjust width as needed */
+    height: auto; /* Adjust height dynamically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 3%;
+  }
+  
+  /* Form styles */
+  .card-form_s_and_t {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card-form_s_and_t input,
+  .card-form_s_and_t textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .card-form_s_and_t_button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-form_s_and_t button:hover {
+    background-color: #3d36b3; /* Darker shade on hover */
+  }
+  
+  /* Cards container */
+  .cards-container-s_and_t {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center cards horizontally */
+  }
+  
+  /* Card styles */
+  .card_s_and_t {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 8px;
+    width: auto; /* Adjust width dynamically or set a fixed width if needed */
+  }
+  
+  /* Card title styling */
+  .card_s_and_t h3 {
+      margin-top: 0; /* Remove default margin from top */
+  }
+  
+  /* Button styles within card actions */
+  .card-actions_s_and_t {
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Align buttons to the center */
+      margin-top: 10px; /* Space above buttons */
+  }
+  
+  .edit-button_s_and_t,
+  .delete-button_s_and_t {
+      background-color: transparent; /* Changed for consistency */
+      border: none; /* Remove default borders */
+      cursor: pointer; /* Pointer cursor on hover */
+      font-size: 16px; /* Font size for buttons */
+      margin-left: 8px; /* Space between buttons */
+      transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .edit-button_s_and_t:hover {
+      color: #007bff; /* Change color on hover for edit button */
+  }
+  
+  .delete-button_s_and_t:hover {
+      color: #dc3545; /* Change color on hover for delete button */
+  }
+  
+  /* Navigation buttons styling */
+  .navigation-buttons_s_and_t {
+      display: flex; /* Use flexbox for layout */
+      justify-content: space-between; /* Space navigation buttons evenly across the container */
+      width:100%; /* Ensure it takes full width of the parent container*/
+      margin-top:20px; 
+  }
+  
+  .navigation-buttons_s_and_t button {
+      background-color: #4f46e5; 
+      color:white;
+      border:none;
+      padding :10px15px ;
+      border-radius :4px ;
+      cursor:pointer ;
+      transition :background-color .3s ease ;
+  }
+  
+  .navigation-buttons_s_and_t button:hover {
+     background-color:#3d36b3 ;/* Darker shade on hover*/
+  }
+  
+  .navigation-buttons_s_and_t button[disabled] {
+     background-color:#ccc ;/* Gray out disabled buttons*/
+     cursor:not-allowed ;/* Change cursor style when disabled*/
+  }
+  

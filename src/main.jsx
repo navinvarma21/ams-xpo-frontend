@@ -32,11 +32,15 @@ import "./Component/Css Styles/Admin_and_Teacher/Teacher_Mainmenu.css"
 import "./Component/Css Styles/Student/Student_Navbar.css"
 import "./Component/Css Styles/Student/Grades_and_Marks.css"
 import "./Component/Css Styles/Student/Attendance_Student_and_parent.css"
+import "./Component/Css Styles/Student/Announcements.css"
+import "./Component/Css Styles/Student/Events.css"
+import "./Component/Css Styles/Student/Exam_detail.css"
+import "./Component/Css Styles/Student/Timetable_student_and_parent.css"
 
 // Parent
 
 import "./Component/Css Styles/Parent/Parent_Navbar.css"
-
+import "./Component/Css Styles/Parent/StudentDetail.css"
 
 
 

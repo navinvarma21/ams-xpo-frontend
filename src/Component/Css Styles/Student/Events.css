@@ -1,0 +1,96 @@
+ViewEvents.css
+
+.view-events-container-s {
+  width: 100%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  margin-left: 5%;
+}
+
+.view-events-title-s {
+  font-size: medium;
+  text-align: left; /* Align title to the left */
+  margin-left: 2%; /* Reset margin for the title */
+  margin-top: 2%;
+}
+
+.search-container-s {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.search-label-s {
+  margin-right: 10px;
+}
+
+.search-input-s {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.events-table-s {
+  width: 90%;
+  border-collapse: collapse;
+  margin-left: 5%;
+}
+
+.events-table-s th,
+.events-table-s td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.events-table-s th {
+  background-color: #f4f4f4;
+}
+
+.events-table-s tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.events-table-s tr:hover {
+  background-color: #f1f1f1;
+}
+
+.open-button-s {
+  background-color: #6c63ff; /* Purple color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button-s:hover {
+  background-color: #574bdb; /* Darker purple */
+}
+
+.open-button-edit-s {
+  background-color: #6c63ff; /* Purple color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button-edit-s:hover {
+  background-color: #574bdb; /* Darker purple */
+}
+
+.open-button-delete-s {
+  background-color: #FF0000; /* Red color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-button-delete-s:hover {
+  background-color: #dc3545; /* Darker red */
+}

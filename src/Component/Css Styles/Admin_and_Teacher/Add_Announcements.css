@@ -89,7 +89,7 @@ body {
   
   
   /* Scrollable Cards Container */
-.cards-container {
+.cards-container-a_and_t{
   width: 100%; /* Set the width of the container */
   height: 150px; /* Set the height of the container */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -101,6 +101,7 @@ body {
 
 /* Individual Card Styling */
 .card {
+  background-color: red;
   background-color: #f9f9f9; /* Light background for cards */
   border: 1px solid #ddd; /* Border around each card */
   border-radius: 8px; /* Rounded corners for cards */

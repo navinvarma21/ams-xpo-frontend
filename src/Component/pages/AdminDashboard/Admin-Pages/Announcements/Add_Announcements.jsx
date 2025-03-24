@@ -46,7 +46,7 @@ export default function Add_Announcements() {
        
 
       </div> */}
-        <div className="cards-container">
+        <div className="cards-container-a_and_t">
           <div className="card">
             <h3>Holiday Announcement</h3>
             <p>School will remain closed on Monday due to local elections.</p>

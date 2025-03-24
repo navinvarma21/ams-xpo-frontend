@@ -1,85 +1,70 @@
 /* AttendanceUI.css */
 .attendance-container {
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  .input-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-section label {
-    margin-right: 10px;
-  }
-  
-  .register-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 120px;
-    margin-right: 20px;
-  }
-  
-  .month-select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .attendance-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .attendance-table th,
-  .attendance-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .attendance-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .percentage-circle {
-      width: 250px;
-      height: 500px;
-        background-color: red;
-      position: relative;
-      right: 30%;
-      
-    }
-    
-    .circle {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: lightblue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      color: #fff;
-    }
-    
-    .percent {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1.5em;
-      color: black;
-    }
-    .attendance-Student_and_parent{
+  font-family: sans-serif;
+  padding: 20px;
+}
 
-        font-size:large;
-        
-      }
-      .attendance-container-2{
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 10px;
+}
 
-        margin-left: 14%;
-      }
+.input-section label {
+  margin-right: 10px;
+}
+
+.register-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.month-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.attendance-container-2 {
+  display: flex; 
+  margin-top: 36px;/* Use flexbox for layout */
+  margin-left: 11%;
+
+}
+
+.content-container {
+  display: flex; /* Arrange table and pie chart side by side */
+  justify-content: space-between; /* Space between elements */
+}
+
+.attendance-table {
+  width: 90%; /* Adjust width as needed */
+  border-collapse: collapse;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.attendance-table th {
+  background-color: #f2f2f2;
+}
+
+.percentage-circle {
+  width: 250px; /* Set width for pie chart */
+  height: auto; /* Allow height to adjust automatically */
+}
+
+.attendance-Student_and_parent {
+  font-size: large;
+  margin-top: 2%;
+  margin-left: 1%;
+}

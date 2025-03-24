@@ -1,0 +1,67 @@
+/* General container for the student detail component */
+.student-detail-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header .child-count {
+    font-size: 16px;
+  }
+  
+  .header .child-count input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  /* Student details layout */
+  .student-details {
+    display: flex;
+    gap: 20px;
+    margin-left: 10%;
+  }
+  
+  /* Profile picture styling */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-left: 14%;
+  }
+  
+  /* Details section styling */
+  .details {
+    display: flex;
+    gap: 50px; /* Space between left and right columns */
+  }
+  
+  .details p {
+    margin: 15px ;
+  }
+  
+  /* Read only input field */
+  .details input[type="text"][readonly] {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: auto; /* Adjust width dynamically */
+  }
+  
