@@ -8,7 +8,7 @@
 .attendance__header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align items to the start */
+  justify-content: flex-start; 
   margin-bottom: 20px; /* Add some space below the header */
 }
 
@@ -17,9 +17,10 @@
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #D1D0D0;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
-  margin-right: 10px; /* Add some space after the date input */
+  margin-right: 10px;
+  margin-left: 42%; /* Add some space after the date input */
 }
 
 /* Style for export button */
@@ -58,7 +59,7 @@
 .attendance__input-search {
   padding: 8px;
   border-radius: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #D1D0D0;
   margin-left: 5px;
   width: 200px; /* Adjust the width as needed */
@@ -82,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  width: 100%;
+  width: 90%;
   margin-left: 10%;
 }
 .attendance__table-column {
@@ -98,7 +99,7 @@
 .attendance__input {
   flex: 1;
   padding: 8px;
-  
+  width: 120px;
   border-radius: 20px;
   border: 1px solid #D1D0D0;
   margin: 2px;
@@ -155,4 +156,14 @@
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
+}
+.attendance__head{
+
+  font-size: 24px;
+
+  width: 100%;
+  white-space: nowrap;      
+  display: inline-block;    
+  display: flex;
+  
 }

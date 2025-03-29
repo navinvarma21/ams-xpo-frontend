@@ -7,6 +7,7 @@ const Login = () => {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
+    role: "", // Added role to state for validation
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -17,6 +18,14 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if role is selected
+    if (!credentials.role) {
+      setError("Please select a role to proceed.");
+      return;
+    }
+
+    // Call the login function
     const user = login(credentials.username, credentials.password);
 
     if (user) {
@@ -57,19 +66,23 @@ const Login = () => {
         <div className="Login-container">
           {error && <p style={{ color: "red" }}>{error}</p>}
 
-
           <form className="Login-container_1" onSubmit={handleSubmit}>
-
-            <h4>Select Roll:</h4>
-            <select name="role" required className="input" style={{width:"67%"}}>
-              <option value="" disabled selected>
+            <h4>Select Role:</h4>
+            <select
+              name="role"
+              required
+              className="input"
+              style={{ width: "67%" }}
+              onChange={handleChange} // Handle the role selection
+              value={credentials.role} // Bind the selected value to state
+            >
+              <option value="" disabled>
                 Select Role
               </option>
               <option value="admin">Admin</option>
               <option value="teacher">Teacher</option>
               <option value="student">Student</option>
               <option value="parent">Parent</option>
-              
             </select>
 
             <input
@@ -88,11 +101,16 @@ const Login = () => {
               required
               className="input"
             />
-            <button type="submit" className="btn">Login</button>
+            <button type="submit" className="btn">
+              Login
+            </button>
 
-            <p onClick={() => navigate("/register")}
-             style={{color:"#22C55E",cursor: "pointer"}}>Create Authentication</p>
-           
+            <p
+              onClick={() => navigate("/register")}
+              style={{ color: "#22C55E", cursor: "pointer" }}
+            >
+              Create Authentication
+            </p>
           </form>
         </div>
       </div>

@@ -22,9 +22,10 @@ export default function ViewAttendance() {
 
   return (
     <div className="attendance">
-      <h1>View Attendance</h1>
+      
       <div className="Attendance-container">
         <div className="attendance__header">
+        <h1 className="attendance__head">View Attendance</h1>
           <input
             type="date"
             name="date"
@@ -64,7 +65,7 @@ export default function ViewAttendance() {
         </div>
 
         <div className="attendance__search">
-          <label>Search:</label>
+          
           <input
             type="search"
             placeholder="search"

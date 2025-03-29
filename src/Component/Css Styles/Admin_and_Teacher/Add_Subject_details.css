@@ -44,6 +44,12 @@
   margin-left: 10px;
 }
 
+.add-subject__title{
+
+  font-size: 24px;
+}
+
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .add-subject__input {

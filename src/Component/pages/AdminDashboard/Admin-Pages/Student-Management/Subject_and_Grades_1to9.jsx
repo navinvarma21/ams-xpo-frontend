@@ -7,28 +7,10 @@ export default function Subject_and_Grades_1to9() {
   return (
     <div className="subject-grades">
       <div className="subject-grades__content-container">
-        <h1 className="subject-grades__title">Subject & Grades 1-9</h1>
+      
+          <div className="subject-grades__header-1">
+          <h1 className="subject-grades__title">Subject & Grades 1-9</h1>
 
-        <div className="subject-grades__search-area">
-          <div className="subject-grades__header">
-            <input
-              type="text"
-              name="Search"
-              placeholder="Search"
-              required
-              className="subject-grades__search-input"
-            />
-            <input
-              type="Date"
-              name="Date"
-              placeholder="Date"
-              required
-              className="subject-grades__date-input"
-            />
-
-            <button type="submit" className="subject-grades__export-button">
-              Export
-            </button>
             <select
               name="standard"
               required
@@ -62,15 +44,15 @@ export default function Subject_and_Grades_1to9() {
               <option value="B">B</option>
               <option value="C">C</option>
             </select>
-            {/* <button
-              type="button"
-              className="subject-grades__view-button"
-              onClick={() => setViewMode(true)}
-            >
-              View Exam Record
-            </button> */}
           </div>
-        </div>
+       
+        <input
+          type="text"
+          name="Search"
+          placeholder="Search"
+          required
+          className="subject-grades__search-input-1"
+        />
 
         <div className="subject-grades__table-header">
           <table>
@@ -264,6 +246,7 @@ export default function Subject_and_Grades_1to9() {
                     className="subject-grades__subject-input"
                   />
                 </td>
+                
                 <td>
                   <select className="subject-grades__status-select">
                     <option value="" disabled selected>
