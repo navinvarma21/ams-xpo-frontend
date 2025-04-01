@@ -266,7 +266,6 @@ function PracticalSubjectsTable() {
                 <option value="fail">Fail</option>
               </select>
             </td>
-            
           </tr>
         </tbody>
       </table>
@@ -301,10 +300,45 @@ export default function Subject_and_Grades_10to12() {
   return (
     <div className="subject-grades">
       <div className="subject-grades__content-container">
-        <h1 className="subject-grades__title">Subject & Grades 10-12</h1>
+        <div className="subject-grades__header">
+          <h1 className="subject-grades__title">Subject & Grades 10-12</h1>
+          <select
+            name="standard"
+            required
+            className="subject-grades__input-select"
+          >
+            <option value="" disabled selected>
+              Select Standard
+            </option>
+            <option value="1 Standard">1 Std</option>
+            <option value="2 Standard">2 Std</option>
+            <option value="3 Standard">3 Std</option>
+            <option value="4 Standard">4 Std</option>
+            <option value="5 Standard">5 Std</option>
+            <option value="6 Standard">6 Std</option>
+            <option value="7 Standard">7 Std</option>
+            <option value="8 Standard">8 Std</option>
+            <option value="9 Standard">9 Std</option>
+            <option value="10 Standard">10 Std</option>
+            <option value="11 Standard">11 Std</option>
+            <option value="12 Standard">12 Std</option>
+          </select>
+          <select
+            name="section"
+            required
+            className="subject-grades__input-select"
+          >
+            <option value="section" disabled selected>
+              Section
+            </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </div>
 
         <div className="subject-grades__search-area">
-          <div className="subject-grades__header">
+          <div className="subject-grades__header-1">
             <input
               type="text"
               name="Search"
@@ -312,57 +346,6 @@ export default function Subject_and_Grades_10to12() {
               required
               className="subject-grades__search-input"
             />
-            <input
-              type="Date"
-              name="Date"
-              placeholder="Date"
-              required
-              className="subject-grades__date-input"
-            />
-
-            <button type="submit" className="subject-grades__export-button">
-              Export
-            </button>
-            <select
-              name="standard"
-              required
-              className="subject-grades__input-select"
-            >
-              <option value="" disabled selected>
-                Select Standard
-              </option>
-              <option value="1 Standard">1 Std</option>
-              <option value="2 Standard">2 Std</option>
-              <option value="3 Standard">3 Std</option>
-              <option value="4 Standard">4 Std</option>
-              <option value="5 Standard">5 Std</option>
-              <option value="6 Standard">6 Std</option>
-              <option value="7 Standard">7 Std</option>
-              <option value="8 Standard">8 Std</option>
-              <option value="9 Standard">9 Std</option>
-              <option value="10 Standard">10 Std</option>
-              <option value="11 Standard">11 Std</option>
-              <option value="12 Standard">12 Std</option>
-            </select>
-            <select
-              name="section"
-              required
-              className="subject-grades__input-select"
-            >
-              <option value="section" disabled selected>
-                Section
-              </option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-            </select>
-            {/* <button
-              type="button"
-              className="subject-grades__view-button"
-              onClick={() => setViewMode(true)}
-            >
-              View Exam Record
-            </button> */}
           </div>
         </div>
 

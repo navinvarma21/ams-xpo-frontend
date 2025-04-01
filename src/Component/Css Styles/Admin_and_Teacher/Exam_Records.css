@@ -17,18 +17,26 @@
 
 .exam-records__search {
     padding: 8px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 2px solid #D1D0D0;
     position: absolute;
     width: 30%;
     margin: 0;
     margin-left: 20px;
+    
     right: 60%;
 }
 
 .exam-records__header {
     display: flex;
+    margin-left: 98%;
 }
+
+.exam-records__header select{
+    
+    margin-left: 1%;
+}
+
 
 .exam-records__button {
     padding: 10px;
@@ -134,4 +142,8 @@
     background-color: #f9f9f9;
   }
   
-  
+  .exam-records__title{
+
+    font-size: 24px;
+    margin-left: 1%;
+  }

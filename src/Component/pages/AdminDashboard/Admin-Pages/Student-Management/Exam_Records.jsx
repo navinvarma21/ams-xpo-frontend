@@ -46,9 +46,6 @@ export default function ExamRecords() {
               <option value="C">C</option>
             </select>
 
-            <button type="submit" className="exam-records__button exam-records__button--export">
-              Export
-            </button>
           </div>
         </div>
 

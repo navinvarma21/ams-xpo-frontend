@@ -1,173 +1,175 @@
 .subject-grades {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.subject-grades__content-container {
+  margin-top: 20px;
+}
+
+.subject-grades__title {
+  font-size: 24px;
   
-  .subject-grades__content-container {
-    margin-top: 20px;
-  }
+  margin-bottom: 20px;
+}
+
+.subject-grades__search-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subject-grades__search-input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid #d1d0d0;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+
+
+.subject-grades__date-input {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #d1d0d0;
+}
+
+.subject-grades__export-button,
+.subject-grades__view-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.subject-grades__input-select {
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #d1d0d0;
+}
+
+.subject-grades__table-header table,
+.subject-grades__exam-type-selector table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subject-grades__table-header th,
+.subject-grades__exam-type-selector th {
+  text-align: left;
+  padding: 8px;
+}
+
+.subject-grades__table-header-text,
+.subject-grades__selector-text {
+  font-weight: bold;
+}
+
+.subject-grades__exam-type-selector select {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.subject-grades__marks-table-container {
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
   
-  .subject-grades__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+}
+
+.subject-grades__marks-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.subject-grades__marks-table th,
+.subject-grades__marks-table td {
+  border: 1px solid #ddd;
+  padding: 6.5px;
+  text-align: center;
+}
+
+.subject-grades__marks-table th {
+  background-color: #f2f2f2;
+}
+
+.subject-grades__subject-input,
+.subject-grades__marks-input {
+  width: 95%;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Add these styles to put theory and practical inputs side by side */
+
+.subject-grades__marks-input-theory,
+.subject-grades__marks-input-practical {
+  width: 90px; /* Adjust width as needed */
+  margin-right: 5px; /* Add some spacing between them */
+  display: inline-block; /* Display them side by side */
+}
+
+.subject-grades__Submit-btn {
+  padding: 10px;
+
+  height: 40px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 12%;
+  position: absolute;
+  left: 90%;
+  bottom: 5px;
+}
+
+.subject-grades__status-select {
+  width: 95%;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.subject-grades__selector-text-data {
+  font-weight: 400;
+}
+.subject-grades__Submit-btn-1to9 {
+  padding: 10px;
+
+  height: 40px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 12%;
+  position: absolute;
+  left: 79%;
+  bottom: 5px;
+  top: 55%;
+}
+.subject-grades__header {
   
-  .subject-grades__search-area {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .subject-grades__search-input {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #d1d0d0;
-    width: 30%;
-    margin-bottom: 10px;
-  }
-  
-  .subject-grades__header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
-  
-  .subject-grades__date-input {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #d1d0d0;
-  }
-  
-  .subject-grades__export-button,
-  .subject-grades__view-button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4f46e5;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .subject-grades__input-select {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #d1d0d0;
-  }
-  
-  .subject-grades__table-header table,
-  .subject-grades__exam-type-selector table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .subject-grades__table-header th,
-  .subject-grades__exam-type-selector th {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  .subject-grades__table-header-text,
-  .subject-grades__selector-text {
-    font-weight: bold;
-  }
-  
-  .subject-grades__exam-type-selector select {
-    width: 100%;
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .subject-grades__marks-table-container {
-    overflow-x: auto;
-    display: flex;
-    width: 100%;
-  }
-  
-  .subject-grades__marks-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .subject-grades__marks-table th,
-  .subject-grades__marks-table td {
-    border: 1px solid #ddd;
-    padding: 6.5px;
-    text-align: center;
-  }
-  
-  .subject-grades__marks-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .subject-grades__subject-input,
-  .subject-grades__marks-input {
-    width: 95%;
-    padding: 2px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  /* Add these styles to put theory and practical inputs side by side */
-  
-  .subject-grades__marks-input-theory,
-  .subject-grades__marks-input-practical {
-    width: 90px; /* Adjust width as needed */
-    margin-right: 5px; /* Add some spacing between them */
-    display: inline-block; /* Display them side by side */
-  }
-  
-  .subject-grades__Submit-btn{
-    padding: 10px;
-    
-    height: 40px;
-    background-color: #4F46E5;
-    color: white;
-    font-weight: 300;
-    border: none;
-    border-radius: 5px;
-    font-size: medium;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 12%;
-    position: absolute;
-    left: 90%;
-    bottom: 5px;
-  
-  }
-   
-  .subject-grades__status-select {
-    width: 95%;
-    padding: 2px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  .subject-grades__selector-text-data
-   {
-    font-weight:400;
-  
-  }
-  .subject-grades__Submit-btn-1to9{
-    padding: 10px;
-    
-    height: 40px;
-    background-color: #4F46E5;
-    color: white;
-    font-weight: 300;
-    border: none;
-    border-radius: 5px;
-    font-size: medium;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 12%;
-    position: absolute;
-    left: 79%;
-    bottom: 5px;
-    top: 55%;
-  }
-  
+  width: 100%;
+  white-space: nowrap; 
+  display: flex;
+  align-items: center;
+}
+
+
+
+
