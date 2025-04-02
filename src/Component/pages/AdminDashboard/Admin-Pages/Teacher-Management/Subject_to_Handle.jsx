@@ -3,20 +3,20 @@ import React from "react";
 export default function Subject_to_Handle() {
   return (
     <>
-      <h1 className="exam-records-title">Subject to handle</h1>
+      <h1 className="exam-records-title">Add Subjects to Handle</h1>
       <div className="add-new-teacher-container">
         <div className="add-new-teacher-title-2">
           <label>Unique Id:</label>
           <input
             type="text"
             className="add-new-teacher-input"
-            placeholder="Unique Id"
+            placeholder="Enter Unique Id"
           />
           <label>Teacher Name:</label>
           <input
             type="text"
             className="add-new-teacher-input"
-            placeholder="Teacher Name"
+            placeholder="Enter Teacher Name"
           />
         </div>
         <table className="add-new-teacher-table">
