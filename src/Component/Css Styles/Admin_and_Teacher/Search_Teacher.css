@@ -1,113 +1,173 @@
-/* Search Teacher */
+/* Attendance */
+.attendance {
+  margin-top: 20px;
+  margin-left: 10px;
+}
 
-.search-teacher__title{
-  font-size: 32px;
-  text-align: left; /* Align title to the left */
-  margin-left: 2%; /* Reset margin for the title */
+/* Align header elements horizontally */
+.attendance__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+/* Style for date input */
+.attendance__input-date {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 42%; /* Add some space after the date input */
+}
+
+/* Style for export button */
+.attendance__btn-export {
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid #D1D0D0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some space after the export button */
+}
+
+/* Style for dropdowns */
+.attendance__input-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  margin-right: 10px; /* Add some space after the dropdown */
+}
+
+/* Container for all attendance related elements */
+.Attendance-container {
+  margin-left: 10px;
+  width: 95%;
   margin-top: 3%;
 }
-  
-  .search-teacher__search-input {
-    padding: 8px;
-    border-radius: 15px;
-    border: 2px solid #d1d0d0;
-    width: 30%;
-    margin-bottom: 10px;
-  }
-  
-  .search-teacher__header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 3%;
-    
-  }
-  
-  .search-teacher__export-button,
-  .search-teacher__action-button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4f46e5;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .search-teacher__table-header table,
-  .search-teacher__exam-type-selector table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .search-teacher__table-header th,
-  .search-teacher__exam-type-selector th {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  .search-teacher__table-header-text,
-  .search-teacher__selector-text-data {
-    font-weight: bold;
-  }
-  
-  .search-teacher__exam-type-selector select {
-    width: 100%;
-    padding: 6px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .search-teacher__action-button--normal{
-    padding: 5px;
-  
-    height: 40px;
-    background-color: #4f46e5;
-    color: white;
-    font-weight: 300;
-    border: none;
-    border-radius: 5px;
-    font-size: small;
-    text-align: center;
-    margin: 2px;
-    
-  }
-  
-  .search-teacher__action-button--delete {
-      background-color: red; /* Specific style for delete button */
-      padding: 5px;
-  
-      height: 40px;
-    
-      color: white;
-      font-weight: 300;
-      border: none;
-      border-radius: 5px;
-      font-size: small;
-      text-align: center;
-      margin: 2px;
-  }
-  
-  .search-teacher__action-button:not(:last-child) {
-      margin-right:5px; /* Add space between buttons */
-  }
-  .search-teacher{
 
-    margin-left: 30%;
-    width: 100%;
-  }
-  .search-teacher__search-area{
+/* Style for the search input */
+.attendance__search {
+  margin-top: 20px; 
+  border-radius: 20px;/* Add some space above the search input */
+}
 
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-left: 30%;
-  }
-  .search-teacher__selector-text-data{
-    font-weight: 400;
-  }
-  .search-teacher__table-header{
-    border-bottom: 1px solid #ccc;
-  }
+/* Style for the search input field */
+.attendance__input-search {
+  padding: 8px;
+  border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid #D1D0D0;
+  margin-left: 5px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+/* Style for the table header */
+.attendance__table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #D1D0D0;
+  margin-top: 20px;
+  margin-left: 9%;
+  width: 100%;
+}
+
+/* Style for each table column */
+
+/* Style for the input row */
+.attendance__input-row-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 90%;
+  margin-left: 13%;
+}
+.attendance__table-column {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  
+  width: 100%;
+}
+
+
+/* Style for each input */
+.attendance__input {
+  flex: 1;
+  padding: 8px;
+  width: 120px;
+  border-radius: 20px;
+  border: 1px solid #D1D0D0;
+  margin: 2px;
+}
+
+/* Style for dropdowns in the input row */
+.attendance__input-row-1 .attendance__input-dropdown {
+  flex: 1;
+  
+}
+
+
+/* Adjust width for small inputs (Date, Roll No) */
+.attendance__input-small {
+  width: 70px; /* Adjust as needed */
+}
+
+/* Adjust width for medium inputs (Student Name) */
+.attendance__input-medium {
+  width: 120px; /* Adjust as needed */
+}
+
+/* Adjust width for remarks input */
+.attendance__input-remarks {
+  width: 150px; /* Adjust as needed */
+}
+
+/* Adjust width for status dropdown */
+.attendance__input-status {
+  width: 100px; /* Adjust as needed */
+}
+
+/* Style for action buttons */
+.attendance__action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+/* Style for edit button */
+.attendance__edit-button {
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for delete button */
+.attendance__delete-button {
+  background-color: #FF0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.attendance__head{
+
+  font-size: 24px;
+
+  width: 100%;
+  white-space: nowrap;      
+  display: inline-block;    
+  display: flex;
+  
+}
+.search-teacher__title{
+
+  font-size: 24px;
+}

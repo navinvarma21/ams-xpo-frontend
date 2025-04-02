@@ -1,101 +1,101 @@
 import React from "react";
-
+import { useState } from "react";
 export default function SearchTeacher() {
+  const [attendanceData, setAttendanceData] = useState([
+    {
+      id: 1,
+
+      uqid: "EMP202501",
+      Name: "Priya",
+      experience: "8 years",
+      subject: "English",
+      qualification: "Msc",
+    },
+    {
+      id: 2,
+
+      uqid: "EMP202501",
+      Name: "Bala",
+      experience: "3 years",
+      subject: "Maths",
+
+      qualification: "Bsc",
+    },
+  ]);
+
   return (
-    <>
-      <h1 className="search-teacher__title">Search Teacher</h1>
-      <div className="search-teacher__search-area">
-          <div className="search-teacher__header">
+    <div className="attendance">
+      <h1 className="search-teacher__title">Search Teachers</h1>
+      <div className="Attendance-container">
+        <div className="attendance__search">
+          <input
+            type="search"
+            placeholder="search"
+            className="attendance__input-search"
+          />
+        </div>
+
+        <div className="attendance__table-header">
+          <p className="attendance__table-column">NAME</p>
+          <p className="attendance__table-column">UNIQUE ID</p>
+          <p className="attendance__table-column">SUBJECT</p>
+          <p className="attendance__table-column">QUALIFICATION</p>
+          <p className="attendance__table-column">EXPERIENCE</p>
+          <p className="attendance__table-column">ACTIONS</p>
+        </div>
+
+        {attendanceData.map((data) => (
+          <div className="attendance__input-row-1" key={data.id}>
             <input
               type="text"
-              name="Search"
-              placeholder="Search"
-              required
-              className="search-teacher__search-input"
+              className="attendance__input attendance__input-small"
+              placeholder="Today Date"
+              value={data.Name}
+              readOnly
             />
-            <button type="submit" className="search-teacher__export-button">
-              Export
-            </button>
+            <input
+              type="text"
+              placeholder="Roll No"
+              className="attendance__input attendance__input-small"
+              value={data.uqid}
+              readOnly
+            />
+            <input
+              type="text"
+              placeholder="Student Name"
+              className="attendance__input attendance__input-medium"
+              value={data.subject}
+              readOnly
+            />
+            <input
+              name="status"
+              required
+              className="attendance__input-dropdown attendance__input-status"
+              defaultValue={data.qualification}
+            />
+            <input
+              type="text"
+              placeholder="Add Remarks..."
+              className="attendance__input attendance__input-remarks"
+              value={data.experience}
+            />
+            <div className="attendance__action-buttons">
+              <button
+                className="attendance__edit-button"
+                style={{ backgroundColor: "#4F46E5" }}
+              >
+                Edit
+              </button>
+              <button
+                className="attendance__delete-button"
+                style={{ backgroundColor: "#f44336" }}
+              >
+                Delete
+              </button>
+            </div>
           </div>
-        </div>
-      <div className="search-teacher">
-        
-
-        <div className="search-teacher__table-header">
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  <p className="search-teacher__table-header-text">
-                    Academic Year
-                  </p>
-                </th>
-                <th>
-                  <p className="search-teacher__table-header-text">
-                    Student Name
-                  </p>
-                </th>
-                <th>
-                  <p className="search-teacher__table-header-text">Standard</p>
-                </th>
-                <th>
-                  <p className="search-teacher__table-header-text">Section</p>
-                </th>
-                <th>
-                  <p className="search-teacher__table-header-text">Exam Type</p>
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-
-        <div className="search-teacher__exam-type-selector">
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  <p className="search-teacher__selector-text-data">
-                    Academic Year
-                  </p>
-                </th>
-                <th>
-                  <p className="search-teacher__selector-text-data">
-                    Student Name
-                  </p>
-                </th>
-                <th>
-                  <p className="search-teacher__selector-text-data">Standard</p>
-                </th>
-                <th>
-                  <p className="search-teacher__selector-text-data">Section</p>
-                </th>
-                <th>
-                  <td className="Action-btn">
-                    <button
-                      type="button"
-                      className="search-teacher__action-button--normal"
-                    >
-                      View
-                    </button>
-                    <button
-                      type="button"
-                      className="search-teacher__action-button--normal"
-                    >
-                      Edit
-                    </button>
-                    <button
-                      type="button"
-                      className="search-teacher__action-button--delete"
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
