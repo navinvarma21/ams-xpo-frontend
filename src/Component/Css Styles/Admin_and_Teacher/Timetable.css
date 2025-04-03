@@ -1,88 +1,136 @@
 /* TimetableForm.css */
 .timetable-form {
-    font-family: sans-serif;
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    
-  }
-  
-  .timetable-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .period {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 130px;
-    background-color: #3e8e41;
-  }
-  
-  .period label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size:13px;
-  }
-  
-  .period input[type="time"],
-  .period input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-  }
-  
-  .timetable-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-.timetable__title {
-
-  /* margin-right: 55%; */
-  margin-top: 3%;
-  font-size: 32px;
-  margin-left: 3%;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 0;
+  display: flex;
   
 }
 
-  .timetable-form button:hover {
-    background-color: #3e8e41;
-  }
-  .schedule-form{
+.timetable-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    
-    max-height: 80vh; /* Keeps the height constrained within the viewport */
-  overflow-y: auto; /* Adds a vertical scrollbar */
-  padding: 20px;
-  background-color: #3e8e41;
-  margin: 0 auto;
-  width: 100%;
+.period {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  width: 130px;
+  background-color: #4F46E5;
+}
+
+.period label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size:13px;
+}
+
+.period input[type="time"],
+.period input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.timetable-form button {
+  background-color: #4F46E5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.timetable__title {
+
+/* margin-right: 55%; */
+margin-top: 3%;
+font-size: 24px;
+margin-left: 3%;
+margin-right: 110%;
+
+}
+
+.timetable-form button:hover {
+  background-color: #4F46E5;
+}
+.schedule-form{
+
+  
+  max-height: 80vh; /* Keeps the height constrained within the viewport */
+overflow-y: auto; /* Adds a vertical scrollbar */
+padding: 20px;
+border: 1px solid black;
+margin: 0 auto;
+width: 100%;
+border-radius: 5px;
+display: flex;
+}
+.timetable-container{
+
+  margin-top: 20px;
+  margin-left: 50%;
+  width: 100%;
+  
+}
+.btn-timetable{
+
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  margin: 5px;
+}
+.timetable{
+
+  white-space: nowrap;       
+  
   display: flex;
-  }
-  .timetable-container{
+  align-items: center;
+}
+.timetable__input-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  margin-top: 3%;
+  margin-right: 10px; /* Add some space after the dropdown */
+}
+.Viewtimetable{
 
-    margin-top: 20px;
-    margin-left: 60%;
-    width: 100%;
-    
-  }
-  .btn-timetable{
+  white-space: nowrap;       
+  margin-bottom: 20px;
+  margin-top: 2%;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+}
+.Viewtimetable__input-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #D1D0D0;
+  
+  margin-right: 10px; /* Add some space after the dropdown */
+}
+.Viewtimetable__title{
+  font-size: 24px;
+  margin-right: 36%;
+  
+}
+.viewtimetable-btn-edit{
 
-    height: 50px;
-    width: 100px;
-    text-align: center;
-    margin: 5px;
-  }
+  color: white;
+  background-color: #4F46E5;
+  padding: 8px;
+}
+.viewtimetable-btn-delete{
+
+  color: white;
+  padding: 8px;
+  background-color:#FF0000 ;
+}

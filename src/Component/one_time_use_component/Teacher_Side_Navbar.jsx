@@ -14,9 +14,9 @@ export default function Teacher_Side_Navbar({ setActiveComponent }) {
         { label: "Exam Records", component: "Exam_Records" },
       ],
       1: [
-        { label: "Subject to Handle", component: "Subject_to_Handle" },
+        { label: "Add Subjects to Handle", component: "Subject_to_Handle" },
         { label: "Timetable", component: "Timetable" },
-        { label: "View Timetable", component: "View_Timetable" },
+        { label: "Assigned Timetable", component: "View_Timetable" },
       ],
       2: [
         { label: "Add Exams", component: "Add_Exams" },

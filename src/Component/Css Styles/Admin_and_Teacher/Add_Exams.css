@@ -1,120 +1,165 @@
-/* Add Exams */
-.Add_Exam__title {
-  font-size: 32px;
-  text-align: left; /* Align title to the left */
-  margin-left: 2%; /* Reset margin for the title */
+/* App.css */
+
+
+.container-add-exam {
+  width: 110%;
+  margin-left: 8%;
+  /* margin: 20px auto; */
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+ }
+ .container-add-exam-1{
+  position: relative;
+ }
+ 
+ .container-add-exam table {
+  width: 80%;
+  border-collapse: collapse;
+  
+ }
+ 
+ 
+ .container-add-exam td {
+  
+  padding: 1px;
+  border: none;
+ }
+ 
+ 
+ .Add_exam_title {
+  
+  margin-left: 2%;
   margin-top: 3%;
-}
-
-/* General Container for Add New Exam */
-.add-new-Exam-container {
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 120%;
-  max-width: 900px;
-  padding: 20px;
-  margin-left: 38%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Title Styling */
-.add-new-Exam-container h2 {
   font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Form Scrollable Container */
-.form-scrollable-container {
-  width: 100%;
-}
-
-/* Form Grid */
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-/* Form Group - Label and Input */
-.form-group {
+  margin-bottom: 1%;
+ }
+ 
+ 
+ .form-group {
   display: flex;
-  flex-direction: column;
-}
-
-/* Label Styling */
-.form-group label {
+  align-items: center;
+  
+  margin-bottom: 1px;
+ }
+ 
+ 
+ .form-group label {
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+  color: #555;
   font-size: 14px;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-/* Input Styling */
-.form-group input[type="text"],
-.form-group input[type="number"],
-.form-group input[type="time"],
-.form-group input[type="date"],
-.form-group select {
-  padding: 8px;
-  border: 1px solid #ccc;
+ }
+ 
+ 
+ .form-group input[type="text"],
+ .form-group select {
+  padding: 3px;
+  border: 1px solid #ddd;
   border-radius: 4px;
-}
-
-/* Button Container */
-.button-container {
-   display: flex;
-   justify-content: center; /* Center buttons horizontally */
-   margin-top: 20px; /* Space above buttons */
-}
-
-/* General Button Styling */
-.submit-button,
-.reset-button,
-button {
-   padding: 10px; 
-   border-radius: 4px; 
-   font-size: 16px; 
-   margin-right:10px; /* Space between buttons */
-   border:none; /* Remove default border */
-}
-
-/* Submit Button Styling */
-.submit-button {
-   background-color: #4CAF50; /* Green background */
-}
-
-.submit-button:hover {
-   background-color: #367c39; /* Darker green on hover */
-}
-
-/* Reset Button Styling */
-.reset-button {
-   background-color: #f44336; /* Red background */
-}
-
-.reset-button:hover {
-   background-color: #d32f2f; /* Darker red on hover */
-}
-
-/* Responsive Design */
-@media (max-width:768px) {
-   .form-grid {
-     grid-template-columns:1fr; /* Single column on smaller screens */
-   }
-
-   .button-container {
-     flex-direction: column; /* Stack buttons vertically on small screens */
-     align-items:center; /* Center align buttons in column layout */
-   }
-
-   .submit-button,
-   .reset-button,
-   button {
-     margin-right:0; /* Remove right margin in vertical layout */
-     margin-bottom:10px; /* Add space below buttons in vertical layout */
-   }
-}
+  flex: 1;
+  max-width: 200px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+ }
+ 
+ 
+ .form-group .input-wrapper {
+  display: flex;
+  flex: 1;
+  max-width: 200px;
+  align-items: center;
+ }
+ 
+ 
+ .form-group .input-wrapper input[type="text"] {
+  flex: 1;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+ }
+ 
+ 
+ .form-group .input-wrapper .calendar-icon {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px;
+  cursor: pointer;
+  color: #555;
+ }
+ 
+ 
+ .buttons {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 102%;
+  left: 73%;
+ }
+ 
+ 
+ .buttons button {
+  padding: 1px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: white;
+  font-size: 16px;
+ }
+ 
+ 
+ .buttons .submit {
+  background-color: #4F46E5;
+ }
+ 
+ 
+ .buttons .reset {
+  background-color:#FF0000;
+ }
+ 
+ 
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+  .container-add-exam {
+   width: 95%;
+   padding: 10px;
+  }
+ 
+ 
+  .container-add-exam table {
+   display: block;
+   overflow-x: auto;
+  }
+ 
+ 
+  .container-add-exam td {
+   width: 10%;
+   display: block;
+  }
+ 
+ 
+  .form-group {
+   flex-direction: column;
+   align-items: flex-start;
+  }
+ 
+ 
+  .form-group label {
+   text-align: left;
+   width: 100%;
+   margin-bottom: 5px;
+  }
+ 
+ 
+  .form-group input[type="text"],
+  .form-group select,
+  .form-group .input-wrapper {
+   width: 100%;
+   max-width: none;
+  }
+ }
+ 

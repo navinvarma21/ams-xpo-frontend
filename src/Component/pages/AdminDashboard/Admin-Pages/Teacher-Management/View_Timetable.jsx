@@ -4,7 +4,31 @@ import React from "react";
 
 export default function ViewTimetable() {
   return (
-    <><h1 className="View_timetable__title">View Timetable</h1>
+    <>
+   <div className="Viewtimetable">
+    <h1 className="Viewtimetable__title">Assigned Timetable</h1>
+    <button className="viewtimetable-btn-edit">Edit</button>
+    <button className="viewtimetable-btn-delete">Delete</button>
+    <select name="standard" required className="Viewtimetable__input-dropdown">
+          <option value="" disabled selected>
+            Standard
+          </option>
+          {[...Array(12)].map((_, i) => (
+            <option key={i} value={`${i + 1}th`}>
+              {i + 1}th
+            </option>
+          ))}
+        </select>
+        <select name="section" required className="Viewtimetable__input-dropdown">
+          <option value="" disabled selected>
+            Section
+          </option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
+    </div>
+      
     <div className="timetable__container">
       
       <table
