@@ -3,9 +3,28 @@ import React from "react";
 export default function View_Exam_Details() {
   return (
     <>
-      <h1 className="View_Exam__title">View Exam Details</h1>
+      <div className="View_Exam_header">
+        <h1 className="View_Exam__title">View Exam Details</h1>
+        <select name="standard" required className="View_Exam__input-dropdown">
+          <option value="" disabled selected>
+            Standard
+          </option>
+          {[...Array(12)].map((_, i) => (
+            <option key={i} value={`${i + 1}th`}>
+              {i + 1}th
+            </option>
+          ))}
+        </select>
+        <select name="section" required className="View_Exam__input-dropdown">
+          <option value="" disabled selected>
+            Exam
+          </option>
+          <option value="A">Internal 1</option>
+          <option value="B">Internal 2</option>
+          <option value="C">internal 3</option>
+        </select>
+      </div>
       <div className="view-Exam-container">
-      
         <div className="exam-details-grid">
           {/* Column 1 */}
           <div>
@@ -93,12 +112,11 @@ export default function View_Exam_Details() {
             <label htmlFor="examDuration">Exam duration:</label>
             <p id="examDuration">3 Hours</p>
             <div className="button-container">
-          <button className="edit-button">Edit</button>
-          <button className="delete-button">Delete</button>
-        </div>
+              <button className="edit-button">Edit</button>
+              <button className="delete-button">Delete</button>
+            </div>
           </div>
         </div>
-        
       </div>
     </>
   );

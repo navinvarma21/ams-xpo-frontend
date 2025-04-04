@@ -3,18 +3,30 @@ import React from "react";
 export default function View_Announcements() {
   return (
     <>
-      <h1 className="View__Announcements__title">Edit Announcements</h1>{" "}
+      <h1 className="View__Announcements__title">Edit Announcements</h1>
       <div className="Edit-Announcement-container">
-      
         <form className="form-container">
-          <label htmlFor="headline">Enter Headline:</label>
-          <input type="text" id="headline" placeholder="Enter Headline" />
+          <div className="form-row">
+            <label htmlFor="headline">Enter Headline:</label>
+            <input
+              type="text"
+              id="headline"
+              placeholder="Enter Headline"
+            />
+          </div>
 
-          <label htmlFor="description">Description:</label>
-          <textarea id="description" placeholder="Description"></textarea>
+          <div className="form-row">
+            <label htmlFor="description">Description:</label>
+            <textarea
+              id="description"
+              placeholder="Description"
+            ></textarea>
+          </div>
 
-          <label htmlFor="date">Date:</label>
-          <input type="date" id="date" />
+          <div className="form-row">
+            <label htmlFor="date">Date:</label>
+            <input type="date" id="date" />
+          </div>
 
           <div className="button-container">
             <button type="submit" className="submit-button">

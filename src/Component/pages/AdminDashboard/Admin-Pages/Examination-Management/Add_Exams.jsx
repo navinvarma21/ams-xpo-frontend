@@ -41,8 +41,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject1Date">Subject 1 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject1Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject1Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -59,8 +59,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject2Date">Subject 2 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject2Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject2Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -77,8 +77,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject3Date">Subject 3 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject3Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject3Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -95,8 +95,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject4Date">Subject 4 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject4Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject4Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -113,8 +113,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject5Date">Subject 5 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject5Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject5Date" />
+              
                   </div>
                 </div>
               </td>
@@ -131,8 +131,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="subject6Date">Subject 6 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="subject6Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="subject6Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -149,8 +149,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="practical1Date">Practical 1 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="practical1Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="practical1Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -167,8 +167,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="practical2Date">Practical 2 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="practical2Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="practical2Date" />
+                    
                   </div>
                 </div>
               </td>
@@ -185,8 +185,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="practical3Date">Practical 3 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="practical3Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="practical3Date" />
+                   
                   </div>
                 </div>
               </td>
@@ -203,8 +203,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="practical4Date">Practical 4 Exam Date:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="practical4Date" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="date" id="practical4Date" />
+                   
                   </div>
                 </div>
               </td>
@@ -230,8 +230,8 @@ export default function Add_Exams() {
                 <div className="form-group">
                   <label htmlFor="startTime">Starting time:</label>
                   <div className="input-wrapper">
-                    <input type="text" id="startTime" />
-                    <button className="calendar-icon">📅</button>
+                    <input type="time" id="startTime" />
+                    
                   </div>
                 </div>
               </td>
@@ -244,7 +244,7 @@ export default function Add_Exams() {
             </tr>
           </tbody>
         </table>
-        <div className="buttons">
+        <div className="buttons-add-exam">
           <button className="submit">Submit</button>
           <button className="reset">Reset</button>
         </div>
