@@ -11,7 +11,7 @@
 
 
 .view-events-title {
-  font-size: 32px;
+  font-size: 24px;
   text-align: left; /* Align title to the left */
   margin-left: 2%; /* Reset margin for the title */
   margin-top: 2%;
@@ -20,9 +20,10 @@
 
 .search-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   margin-bottom: 20px;
   align-items: center;
+  margin-top: 20px;
 }
 
 .search-label {
@@ -30,33 +31,44 @@
 }
 
 .search-input {
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .events-table {
   width: 100%;
+  margin-left: 6%;
   border-collapse: collapse;
 }
 
-.events-table th,
-.events-table td {
-  border: 1px solid #ddd;
+
+.events-table th{
+  /* border: 1px solid #ddd; */
   padding: 10px;
 }
 
-.events-table th {
-  background-color: #f4f4f4;
+.events-table td {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  font-size: 14px;
 }
 
-.events-table tr:nth-child(even) {
+thead{
+
+  border-bottom: 1px solid #D1D0D0;
+}
+/* .events-table th {
+  background-color: #f4f4f4;
+} */
+
+/* .events-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
 .events-table tr:hover {
   background-color: #f1f1f1;
-}
+} */
 
 .open-button {
   background-color: #6c63ff; /* Purple color */

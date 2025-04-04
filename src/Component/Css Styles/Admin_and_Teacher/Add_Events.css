@@ -1,87 +1,91 @@
-/* Add Event */
+/* Add Events */
 
-
-.Add__Event__title{
-  font-size: 32px;
-  text-align: left; /* Align title to the left */
-  margin-left: 6%; /* Reset margin for the title */
-  margin-top: 6%;
+.Add__Event__title-add-event {
+  font-size: 24px;
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 3%;
 }
+
+.event-form-add-event {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  width: 100%;
+}
+
+.form-section-add-event {
+  display: flex;
+  justify-content: space-between;
   
+}
 
+.column1-add-event {
+  width: 48%;
+}
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.column2-add-event {
+  width: 48%;
+}
+
+.table-add-event {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.table-add-event th {
+  color: #5990EC;
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.table-add-event td {
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+}
+
+.table-add-event label {
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 0.9em;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.table-add-event input[type="text"],
+.table-add-event input[type="time"],
+.table-add-event input[type="date"],
+.table-add-event input[type="url"],
+.table-add-event select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
   background-color: #f5f5f5;
 }
 
-.event-form {
-  background-color: red;
-  width: 200%;
-  margin-left: 80%;
-  height: 65vh;
-  margin-top: 3%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.buttons-add-event {
+  text-align: left;
+  margin-top: 20px;
 }
 
-.event-form h2 {
-  text-align: center;
-}
-
-.section {
-  margin-bottom: 20px;
-  
-  
-}
-
-.section h3 {
-  margin-bottom: 10px;
-}
-
-.event-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.event-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.event-form select {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.event-form button {
-  display: inline-block;
-  /* Changed to inline-block */
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 4px;
+.add_event_button {
+  padding: 5px 15px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px;
-  /* Added right margin */
+  margin: 0 5px;
+  color: white;
+  font-size: 14px;
+  background-color: #4F46E5;
 }
-
-.event-form button:hover {
-  background-color: #0056b3;
-}
-
-.buttons {
-  text-align: center;
-  /* Center the buttons */
+.Add__container{
+  margin-left: 10%;
+  width: 100%;
 }
