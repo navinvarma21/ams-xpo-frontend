@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../AuthService"; // Import login function
 import Footer from "../../one_time_use_component/Footer";
-
+import IMAGES from "../../../Images/images";
 const Login = () => {
   const [credentials, setCredentials] = useState({
     username: "",
@@ -54,7 +54,7 @@ const Login = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundImage: "url('public/images/loginpage.jpg')",
+          backgroundImage: `url(${IMAGES.image7})`,
           backgroundSize: "contain", // Updated for fitting the image
           backgroundRepeat: "no-repeat", // Added to prevent image repetition
           backgroundPosition: "center", // Centers the image

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../AuthService"; // Import login function
-
+import IMAGES from "../../../Images/images";
 
 const Register = () =>{
 
@@ -46,7 +46,7 @@ const Register = () =>{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage: "url('public/loginpage.jpg')",
+              backgroundImage: `url(${IMAGES.image7})`,
               backgroundSize: "contain", // Updated for fitting the image
               backgroundRepeat: "no-repeat", // Added to prevent image repetition
               backgroundPosition: "center", // Centers the image
