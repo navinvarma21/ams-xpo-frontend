@@ -1,27 +1,25 @@
 /* View exam details */
-
-
-.View_Exam__title{
+.View_Exam__title {
   font-size: 24px;
   text-align: left; /* Align title to the left */
   margin-left: 2%; /* Reset margin for the title */
   margin-top: 3%;
-  margin-right: 70%;
+  margin-right: 113%;
 }
-  
+
 /* General Container for View Exam */
 .view-Exam-container {
   margin-top: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start */
-  width: 120%;
-  max-width: 1200px;
+  width: 100%;
+  
   padding: 20px;
   
   border-radius: 8px;
   font-family: Arial, sans-serif;
-  margin-left: 25%;
+  /* margin-left: 1%; */
   height: 72vh;
 }
 
@@ -33,47 +31,66 @@
   color: #333;
 }
 
-/* Exam Details Grid */
-.exam-details-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 10px 20px;
-  width: 100%;
-}
-
-/* Individual Detail Item */
-.exam-details-grid > div {
+/* Exam Header Row */
+.exam-header-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  white-space: nowrap;       
+  display: inline-block;  
 }
 
-/* Label Styling */
-.exam-details-grid label {
+/* Label and Input Row */
+.label-input-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.label-input-row label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-right: 10px;
   color: black;
   font-size: 14px;
-  padding: 2px;
 }
 
-/* Value Styling */
-.exam-details-grid p {
-  margin: 0;
+.label-input-row p {
+  margin-left: 2px;
   font-size: 16px;
   color: #444;
-  padding: 1px;
+}
+
+/* Exam Details Table */
+.exam-details-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 14%;
+}
+
+.exam-details-table th, .exam-details-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  align-items: center;
+}
+
+.exam-details-table th {
+  background-color: #f0f0f0;
 }
 
 /* Button Container */
 .button-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
+  margin-top: 10px;
+  position: absolute;
+  right: 32%;
 }
 
-General Button Styling
+/* General Button Styling */
 .button-container button {
-  /* padding: 10px 15px; */
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -87,18 +104,18 @@ General Button Styling
   margin-right: 10px;
 }
 
-
 /* Delete Button Styling */
 .button-container .delete-button {
-  background-color:#FF0000;
+  background-color: #FF0000;
 }
-.View_Exam_header{
+
+.View_Exam_header {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 50%;
   white-space: nowrap;       
-    
 }
+
 .View_Exam__input-dropdown {
   padding: 8px;
   border-radius: 5px;
@@ -106,4 +123,19 @@ General Button Styling
   margin-top: 2%; 
   margin-left: 10px;
   /* Add some space after the dropdown */
+}
+
+.exam-details-table td{
+
+  width: 30%;
+}
+/* Optional: Responsive Design */
+@media screen and (max-width: 768px) {
+  .view-Exam-container {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .exam-details-table {
+    font-size: 14px;
+  }
 }

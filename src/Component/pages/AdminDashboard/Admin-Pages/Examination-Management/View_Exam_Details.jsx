@@ -1,4 +1,5 @@
 import React from "react";
+ // Make sure to link the CSS file properly
 
 export default function View_Exam_Details() {
   return (
@@ -21,102 +22,69 @@ export default function View_Exam_Details() {
           </option>
           <option value="A">Internal 1</option>
           <option value="B">Internal 2</option>
-          <option value="C">internal 3</option>
+          <option value="C">Internal 3</option>
         </select>
       </div>
+
       <div className="view-Exam-container">
-        <div className="exam-details-grid">
-          {/* Column 1 */}
-          <div>
-            <label htmlFor="examName">Exam Name:</label>
-            <p id="examName">Internal</p>
-
-            <label htmlFor="subject1">Subject 1:</label>
-            <p id="subject1">Tamil</p>
-
-            <label htmlFor="subject2">Subject 2:</label>
-            <p id="subject2">English</p>
-
-            <label htmlFor="subject3">Subject 3:</label>
-            <p id="subject3">Maths</p>
-
-            <label htmlFor="subject4">Subject 4:</label>
-            <p id="subject4">Maths</p>
-
-            <label htmlFor="subject5">Subject 5:</label>
-            <p id="subject5">Social science</p>
-
-            <label htmlFor="subject6">Subject 6:</label>
-            <p id="subject6">Moral science</p>
-
-            <label htmlFor="practical1">Practical 1:</label>
-            <p id="practical1">Nill</p>
-
-            <label htmlFor="practical2">Practical 2:</label>
-            <p id="practical2">Nill</p>
+        <div className="exam-header-row">
+          <div className="label-input-row">
+            <label>Exam Name:</label>
+            <p>Internal</p>
           </div>
-
-          {/* Column 2 */}
-          <div>
-            <label htmlFor="standard">Standard:</label>
-            <p id="standard">1st</p>
-
-            <label htmlFor="subject1Date">Subject 1 Exam Date:</label>
-            <p id="subject1Date">11/02/2025</p>
-
-            <label htmlFor="subject2Date">Subject 2 Exam Date:</label>
-            <p id="subject2Date">11/02/2025</p>
-
-            <label htmlFor="subject3Date">Subject 3 Exam Date:</label>
-            <p id="subject3Date">11/02/2025</p>
-
-            <label htmlFor="subject4Date">Subject 4 Exam Date:</label>
-            <p id="subject4Date">11/02/2025</p>
-
-            <label htmlFor="subject5Date">Subject 5 Exam Date:</label>
-            <p id="subject5Date">11/02/2025</p>
-
-            <label htmlFor="subject6Date">Subject 6 Exam Date:</label>
-            <p id="subject6Date">11/02/2025</p>
-
-            <label htmlFor="practical1Date">Practical 1 Exam Date:</label>
-            <p id="practical1Date">11/02/2025</p>
-
-            <label htmlFor="practical2Date">Practical 2 Exam Date:</label>
-            <p id="practical2Date">11/02/2025</p>
-          </div>
-
-          {/* Column 3 */}
-          <div>
-            <label htmlFor="practical3">Practical 3:</label>
-            <p id="practical3">Nill</p>
-
-            <label htmlFor="practical3Date">Practical 3 Exam Date:</label>
-            <p id="practical3Date">11/02/2025</p>
-
-            <label htmlFor="practical4">Practical 4:</label>
-            <p id="practical4">Nill</p>
-
-            <label htmlFor="practical4Date">Practical 4 Exam Date:</label>
-            <p id="practical4Date">11/02/2025</p>
-
-            <label htmlFor="maxMark">Max mark:</label>
-            <p id="maxMark">100</p>
-
-            <label htmlFor="passMark">Pass mark:</label>
-            <p id="passMark">35</p>
-
-            <label htmlFor="startingTime">Starting time:</label>
-            <p id="startingTime">9:30 AM</p>
-
-            <label htmlFor="examDuration">Exam duration:</label>
-            <p id="examDuration">3 Hours</p>
-            <div className="button-container">
-              <button className="edit-button">Edit</button>
-              <button className="delete-button">Delete</button>
-            </div>
+          <div className="label-input-row">
+            <label>Standard:</label>
+            <p>1st</p>
           </div>
         </div>
+
+        <table className="exam-details-table">
+          <thead>
+            <tr>
+              <th>Subjects</th>
+              <th>Practicals</th>
+              <th>Other Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="label-input-row">
+                    <p>Subject {i + 1}: {["Tamil", "English", "Maths", "Maths", "Social ", "Moral"][i]}</p>
+                    <p>Exam Date: 11/02/2025</p>
+                  </div>
+                ))}
+              </td>
+              <td valign="top">
+                {[...Array(4)].map((_, i) => (
+                  <div key={i} className="label-input-row">
+                    <p>Practical {i + 1}: Nill</p>
+                    <p>Exam Date: 11/02/2025</p>
+                  </div>
+                ))}
+              </td>
+              <td valign="top">
+                <div className="label-input-row">
+                  <p>Max Mark: 100</p>
+                </div>
+                <div className="label-input-row">
+                  <p>Pass Mark: 35</p>
+                </div>
+                <div className="label-input-row">
+                  <p>Starting Time: 9:30 AM</p>
+                </div>
+                <div className="label-input-row">
+                  <p>Exam Duration: 3 Hours</p>
+                </div>
+                <div className="button-container">
+                  <button className="edit-button">Edit</button>
+                  <button className="delete-button">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );

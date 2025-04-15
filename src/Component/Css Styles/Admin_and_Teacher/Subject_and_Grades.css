@@ -91,7 +91,10 @@
   overflow-x: auto;
   display: flex;
 }
-
+.subject-grades__table-header-container{
+  margin-left: 7%;
+  width: 100%;
+}
 .subject-grades__marks-table {
   width: 100%;
   border-collapse: collapse;

@@ -1,24 +1,31 @@
 /* Mainmenu */
 
+.Mainmenu-title{
 
+  margin-top: 4%;
+  margin-left: 5%;
+  width: 100%;
+}
 .Mainmenu-container{
 
-    margin-top: 20px;
+    margin-top: 12px;
     margin-left: 10px;
-    position: relative;
+    position: absolute;
+    top: 1%;
+    width: 100%;
   }
   
   .Mainmenu-container-details{
     display: flex;
     width: 80%;
     left: 40%;
-    top: 1%;
+    
     
   
   }
   .Mainmenu-container-details-1{
   
-    
+    margin-bottom: 7%;
     height: 200px;
     width: 200px;
   }
@@ -75,7 +82,7 @@
   
    
     height: 80px;
-    width: 110%;
+    width: 100%;
     margin: 30%;
     margin-left: 20%;
     position: relative;
@@ -125,12 +132,12 @@
   display: flex;
   gap: 20px;
   justify-content: center;
-  width: 210%;
+  width: 300%;
   position: absolute;
-  left: 60%;
+  left: 23%;
   
   height: 30vh;
-  top: 140%;
+  top: 150%;
   
 }
 
@@ -138,8 +145,8 @@
 .report-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
-  width: 200px;
+  padding: 13px;
+  width: 100%;
   justify-content: center;
   text-align: center;
   height: 15vh;
@@ -165,13 +172,14 @@
   background-color: white;
   color: #473FCE;
   border: none;
+  font-weight: bold;
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
-
-.finance{
-
-  margin-bottom:13%;
+.report-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 

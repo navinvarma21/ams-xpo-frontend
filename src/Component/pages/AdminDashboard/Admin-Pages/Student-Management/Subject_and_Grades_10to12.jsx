@@ -301,7 +301,7 @@ export default function Subject_and_Grades_10to12() {
     <div className="subject-grades">
       <div className="subject-grades__content-container">
         <div className="subject-grades__header">
-          <h1 className="subject-grades__title">Subject & Grades 10-12</h1>
+          <h1 className="subject-grades__title-2">Subject & Grades 10-12</h1>
           <select
             name="standard"
             required
@@ -348,97 +348,106 @@ export default function Subject_and_Grades_10to12() {
             />
           </div>
         </div>
+        <div  className="subject-grades__table-header-container-2">
+          <div className="subject-grades__table-header">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <p className="subject-grades__table-header-text">
+                      Academic Year
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__table-header-text">
+                      Student Name
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__table-header-text">
+                      Standard
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__table-header-text">Section</p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__table-header-text">
+                      Exam type
+                    </p>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
 
-        <div className="subject-grades__table-header">
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  <p className="subject-grades__table-header-text">
-                    Academic Year
-                  </p>
-                </th>
-                <th>
-                  <p className="subject-grades__table-header-text">
-                    Student Name
-                  </p>
-                </th>
-                <th>
-                  <p className="subject-grades__table-header-text">Standard</p>
-                </th>
-                <th>
-                  <p className="subject-grades__table-header-text">Section</p>
-                </th>
-                <th>
-                  <p className="subject-grades__table-header-text">Exam type</p>
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-
-        <div className="subject-grades__exam-type-selector">
-          <table>
-            <thead>
-              <tr>
-                <th>
-                  <p className="subject-grades__selector-text-data">
-                    Academic Year
-                  </p>
-                </th>
-                <th>
-                  <p className="subject-grades__selector-text-data">
-                    Student Name
-                  </p>
-                </th>
-                <th>
-                  <p className="subject-grades__selector-text-data">Standard</p>
-                </th>
-                <th>
-                  <p className="subject-grades__selector-text-data">Section</p>
-                </th>
-                <th>
-                  <select
-                    name="section"
-                    required
-                    className="subject-grades__input-select"
-                  >
-                    <option value="section" disabled selected>
+          <div className="subject-grades__exam-type-selector">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <p className="subject-grades__selector-text-data">
+                      Academic Year
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__selector-text-data">
+                      Student Name
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__selector-text-data">
+                      Standard
+                    </p>
+                  </th>
+                  <th>
+                    <p className="subject-grades__selector-text-data">
                       Section
-                    </option>
-                    <option value="half-yearly">Half-Yearly</option>
-                    <option value="quarterly">Quarterly</option>
-                    <option value="annual">Annual</option>
-                    <option value="internal">internal</option>
-                  </select>
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
+                    </p>
+                  </th>
+                  <th>
+                    <select
+                      name="section"
+                      required
+                      className="subject-grades__input-select"
+                    >
+                      <option value="section" disabled selected>
+                        Section
+                      </option>
+                      <option value="half-yearly">Half-Yearly</option>
+                      <option value="quarterly">Quarterly</option>
+                      <option value="annual">Annual</option>
+                      <option value="internal">internal</option>
+                    </select>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
 
-        {renderFormSection()}
+          {renderFormSection()}
 
-        <div className="buttons">
-          {step > 1 && (
-            <button type="button" onClick={prevStep}>
-              Previous
-            </button>
-          )}
-          {step < 2 && (
-            <button type="button" onClick={nextStep}>
-              Next
-            </button>
-          )}
-          {step === 2 && (
-            <button
-              type="button"
-              className="subject-grades__Submit-btn"
-              onClick={() => setViewMode(true)}
-            >
-              Submit
-            </button>
-          )}
+          <div className="buttons">
+            {step > 1 && (
+              <button type="button" onClick={prevStep}>
+                Previous
+              </button>
+            )}
+            {step < 2 && (
+              <button type="button" onClick={nextStep}>
+                Next
+              </button>
+            )}
+            {step === 2 && (
+              <button
+                type="button"
+                className="subject-grades__Submit-btn"
+                onClick={() => setViewMode(true)}
+              >
+                Submit
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

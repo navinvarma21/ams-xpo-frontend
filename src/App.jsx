@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Login
 import Login from "./Component/Auth/Auth_pages/Login";
@@ -12,51 +14,28 @@ import Register from "./Component/Auth/Auth_pages/Register";
 
 function App() {
   return (
-    
     <Router>
       <Routes>
+        {/* Login */}
+        <Route path="/" element={<Login />} />
 
-        {/*Admin*/}
-        <Route path="/" element={<Login/>} />
-       
-        <Route path="/admin" element={<AdminDashboard/>} />
-       
-        <Route path="/register" element={<Register/>} />
+        {/* Admin */}
+        <Route path="/admin" element={<AdminDashboard />} />
 
+        {/* Register */}
+        <Route path="/register" element={<Register />} />
 
+        {/* Teacher */}
+        <Route path="/teacher" element={<TeacherDashboard />} />
 
+        {/* Student */}
+        <Route path="/student" element={<StudentDashboard />} />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <Route path="/teacher" element={<TeacherDashboard/>} />
-        <Route path="/student" element={< StudentDashboard/>} />
+        {/* Parent */}
         <Route path="/parent" element={<ParentDashboard />} />
       </Routes>
+      <ToastContainer position="top-right" />
     </Router>
-    
   );
 }
 

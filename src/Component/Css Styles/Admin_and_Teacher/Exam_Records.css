@@ -29,7 +29,7 @@
 
 .exam-records__header {
     display: flex;
-    margin-left: 98%;
+    margin-left: 168%;
 }
 
 .exam-records__header select{
@@ -146,4 +146,5 @@
 
     font-size: 24px;
     margin-left: 1%;
+    
   }

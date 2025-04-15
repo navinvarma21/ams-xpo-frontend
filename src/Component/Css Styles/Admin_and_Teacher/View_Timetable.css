@@ -60,3 +60,15 @@
 .timetable__cell:hover {
   background-color: #e0e0e0; /* Light gray on hover */
 }
+.viewtimetable-btn-edit{
+
+  border: none;
+  margin: 5px;
+  border-radius: 8px;
+}
+.viewtimetable-btn-delete{
+
+  border: none;
+  margin: 5px;
+  border-radius: 8px;
+}

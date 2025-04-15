@@ -7,27 +7,19 @@ export default function Add_Announcements() {
   const [date, setDate] = useState("");
 
   const [card1Headline, setCard1Headline] = useState("Holiday Announcement");
-  const [card1Description, setCard1Description] = useState(
-    "Message 1"
-  );
+  const [card1Description, setCard1Description] = useState("Message 1");
   const [card1Date, setCard1Date] = useState("11/02/2025");
 
   const [card2Headline, setCard2Headline] = useState("Holiday Announcement");
-  const [card2Description, setCard2Description] = useState(
-    "Message 2"
-  );
+  const [card2Description, setCard2Description] = useState("Message 2");
   const [card2Date, setCard2Date] = useState("11/02/2025");
 
   const [card3Headline, setCard3Headline] = useState("Holiday Announcement");
-  const [card3Description, setCard3Description] = useState(
-    "Message 3"
-  );
+  const [card3Description, setCard3Description] = useState("Message 3");
   const [card3Date, setCard3Date] = useState("11/02/2025");
 
   const [card4Headline, setCard4Headline] = useState("Holiday Announcement");
-  const [card4Description, setCard4Description] = useState(
-    "Message 4"
-  );
+  const [card4Description, setCard4Description] = useState("Message 4");
   const [card4Date, setCard4Date] = useState("11/02/2025");
 
   const nextStep = () => {
@@ -142,12 +134,12 @@ export default function Add_Announcements() {
             </>
           )}
           {step < 2 && (
-            <button className="send-button" onClick={nextStep}>
+            <button className="send-button-container" onClick={nextStep}>
               Next
             </button>
           )}
           {step > 1 && (
-            <button className="send-button" onClick={prevStep}>
+            <button className="send-button-container" onClick={prevStep}>
               Previous
             </button>
           )}

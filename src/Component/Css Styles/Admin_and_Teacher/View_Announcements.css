@@ -42,7 +42,7 @@
   resize: none;
 }
 
-.button-container {
+.button-container-va {
   display: flex;
   /* justify-content: space-between; */
   margin-top: 15px;

@@ -34,67 +34,68 @@ export default function SearchTeacher() {
             className="attendance__input-search"
           />
         </div>
-
-        <div className="attendance__table-header">
-          <p className="attendance__table-column">NAME</p>
-          <p className="attendance__table-column">UNIQUE ID</p>
-          <p className="attendance__table-column">SUBJECT</p>
-          <p className="attendance__table-column">QUALIFICATION</p>
-          <p className="attendance__table-column">EXPERIENCE</p>
-          <p className="attendance__table-column">ACTIONS</p>
-        </div>
-
-        {attendanceData.map((data) => (
-          <div className="attendance__input-row-1" key={data.id}>
-            <input
-              type="text"
-              className="attendance__input attendance__input-small"
-              placeholder="Today Date"
-              value={data.Name}
-              readOnly
-            />
-            <input
-              type="text"
-              placeholder="Roll No"
-              className="attendance__input attendance__input-small"
-              value={data.uqid}
-              readOnly
-            />
-            <input
-              type="text"
-              placeholder="Student Name"
-              className="attendance__input attendance__input-medium"
-              value={data.subject}
-              readOnly
-            />
-            <input
-              name="status"
-              required
-              className="attendance__input-dropdown attendance__input-status"
-              defaultValue={data.qualification}
-            />
-            <input
-              type="text"
-              placeholder="Add Remarks..."
-              className="attendance__input attendance__input-remarks"
-              value={data.experience}
-            />
-            <div className="attendance__action-buttons">
-              <button
-                className="attendance__edit-button"
-                style={{ backgroundColor: "#4F46E5" }}
-              >
-                Edit
-              </button>
-              <button
-                className="attendance__delete-button"
-                style={{ backgroundColor: "#f44336" }}
-              >
-                Delete
-              </button>
-            </div>
+        <div className="attendance__table-header-container-1">
+          <div className="attendance__table-header">
+            <p className="attendance__table-column">Name</p>
+            <p className="attendance__table-column">Teacher Id</p>
+            <p className="attendance__table-column">Subject</p>
+            <p className="attendance__table-column">Qualification</p>
+            <p className="attendance__table-column">Experience</p>
+            <p className="attendance__table-column">Actions</p>
           </div>
-        ))}
+
+          {attendanceData.map((data) => (
+            <div className="attendance__input-row-1" key={data.id}>
+              <input
+                type="text"
+                className="attendance__input attendance__input-small"
+                placeholder="Today Date"
+                value={data.Name}
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="Roll No"
+                className="attendance__input attendance__input-small"
+                value={data.uqid}
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="Student Name"
+                className="attendance__input attendance__input-medium"
+                value={data.subject}
+                readOnly
+              />
+              <input
+                name="status"
+                required
+                className="attendance__input-dropdown attendance__input-status"
+                defaultValue={data.qualification}
+              />
+              <input
+                type="text"
+                placeholder="Add Remarks..."
+                className="attendance__input attendance__input-remarks"
+                value={data.experience}
+              />
+              <div className="attendance__action-buttons">
+                <button
+                  className="attendance__edit-button"
+                  style={{ backgroundColor: "#4F46E5" }}
+                >
+                  Edit
+                </button>
+                <button
+                  className="attendance__delete-button"
+                  style={{ backgroundColor: "#f44336" }}
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

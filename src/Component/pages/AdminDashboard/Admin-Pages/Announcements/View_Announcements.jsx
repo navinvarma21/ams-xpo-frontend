@@ -28,7 +28,7 @@ export default function View_Announcements() {
             <input type="date" id="date" />
           </div>
 
-          <div className="button-container">
+          <div className="button-container-va">
             <button type="submit" className="submit-button">
               Submit
             </button>

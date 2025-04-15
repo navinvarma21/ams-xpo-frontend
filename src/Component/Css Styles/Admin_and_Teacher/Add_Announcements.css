@@ -64,6 +64,22 @@ body {
   margin-top: 10px;
 }
 
+.send-button-container {
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-right: 79%;
+  margin-top: 10px;
+  
+  
+}
+
 /* Cards container */
 .cards-container-a_and_t {
   width: 151%;

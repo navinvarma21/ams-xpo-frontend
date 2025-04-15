@@ -22,10 +22,9 @@ export default function ViewAttendance() {
 
   return (
     <div className="attendance">
-      
       <div className="Attendance-container">
         <div className="attendance__header">
-        <h1 className="attendance__head">View Attendance</h1>
+          <h1 className="attendance__head">View Attendance</h1>
           <input
             type="date"
             name="date"
@@ -65,7 +64,6 @@ export default function ViewAttendance() {
         </div>
 
         <div className="attendance__search">
-          
           <input
             type="search"
             placeholder="search"
@@ -73,63 +71,75 @@ export default function ViewAttendance() {
           />
         </div>
 
-        <div className="attendance__table-header">
-          <p className="attendance__table-column">Today Date</p>
-          <p className="attendance__table-column">Roll No</p>
-          <p className="attendance__table-column">Student Name</p>
-          <p className="attendance__table-column">Status</p>
-          <p className="attendance__table-column">Remarks</p>
-          <p className="attendance__table-column">Actions</p>
-        </div>
-
-        {attendanceData.map((data) => (
-          <div className="attendance__input-row" key={data.id}>
-            <input
-              type="text"
-              className="attendance__input attendance__input-small"
-              placeholder="Today Date"
-              value={data.date}
-              readOnly
-            />
-            <input
-              type="text"
-              placeholder="Roll No"
-              className="attendance__input attendance__input-small"
-              value={data.rollNo}
-              readOnly
-            />
-            <input
-              type="text"
-              placeholder="Student Name"
-              className="attendance__input attendance__input-medium"
-              value={data.studentName}
-              readOnly
-            />
-            <select
-              name="status"
-              required
-              className="attendance__input-dropdown attendance__input-status"
-              defaultValue={data.status}
-            >
-              <option value="" disabled>
-                Select Status
-              </option>
-              <option value="Present">Present</option>
-              <option value="Absent">Absent</option>
-              <option value="Leave">Leave</option>
-            </select>
-            <input
-              type="text"
-              placeholder="Add Remarks..."
-              className="attendance__input attendance__input-remarks"
-              value={data.remarks}
-            />
-            <div className="attendance__action-buttons">
-              <button className="attendance__edit-button" style={{ backgroundColor: "#4F46E5" }}>Edit</button>
-              <button className="attendance__delete-button" style={{ backgroundColor: "#f44336" }}>Delete</button>
-            </div>
+        <div className="attendance__table-header-container">
+          <div className="attendance__table-header">
+            <p className="attendance__table-column">Today Date</p>
+            <p className="attendance__table-column">Roll No</p>
+            <p className="attendance__table-column">Student Name</p>
+            <p className="attendance__table-column">Status</p>
+            <p className="attendance__table-column">Remarks</p>
+            <p className="attendance__table-column">Actions</p>
           </div>
-        ))}
+
+          {attendanceData.map((data) => (
+            <div className="attendance__input-row" key={data.id}>
+              <input
+                type="text"
+                className="attendance__input attendance__input-small"
+                placeholder="Today Date"
+                value={data.date}
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="Roll No"
+                className="attendance__input attendance__input-small"
+                value={data.rollNo}
+                readOnly
+              />
+              <input
+                type="text"
+                placeholder="Student Name"
+                className="attendance__input attendance__input-medium"
+                value={data.studentName}
+                readOnly
+              />
+              <select
+                name="status"
+                required
+                className="attendance__input-dropdown attendance__input-status"
+                defaultValue={data.status}
+              >
+                <option value="" disabled>
+                  Select Status
+                </option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Leave">Leave</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Add Remarks..."
+                className="attendance__input attendance__input-remarks"
+                value={data.remarks}
+              />
+              <div className="attendance__action-buttons">
+                <button
+                  className="attendance__edit-button"
+                  style={{ backgroundColor: "#4F46E5" }}
+                >
+                  Edit
+                </button>
+                <button
+                  className="attendance__delete-button"
+                  style={{ backgroundColor: "#f44336" }}
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,21 +3,25 @@
 
 .Header-Contaier-Navbar {
     display: flex;
-  
+    height: 65px;
     align-items: "center";
-    margin: 20px;
+    /* margin: 20px; */
   }
   .Header-Contaier-Navbar-start {
     display: flex;
     gap: 25px;
     align-items: center;
-  
+    margin-left: 30px;
     width: 100%;
+    
   }
+
+
   .Header-Contaier-Navbar-end {
     display: flex;
-    width: 40%;
+    width: 100%;
     align-items: center;
+    margin-left: 35%;
   }
   .Header-Contaier-Navbar-end-1{
   
@@ -27,5 +31,33 @@
   }
   .Header-Container{
     border-bottom: 1px solid #D1D0D0;
+    
+    
   }
   
+  .logout{
+
+    border: none;
+    background-color:#A9ACE5;
+    height: 30px;
+    width: 70px;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .logout:hover{
+
+    cursor: pointer;
+  }
+
+
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .Header-Contaier-Navbar-end {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-left: 25%;
+    }
+  }
+  
+

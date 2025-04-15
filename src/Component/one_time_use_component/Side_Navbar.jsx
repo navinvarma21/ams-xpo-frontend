@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+import IMAGES from "../../Images/images";
 
 export default function SideNavbar({ setActiveComponent }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -42,18 +43,23 @@ export default function SideNavbar({ setActiveComponent }) {
     <div className="side-navbar-container">
       <ul className="side-navbar-heading-container">
         {[
-          "Student Management",
-          "Teacher Management",
-          "Examination Management",
-          "Announcements",
-          "Events",
+          {
+            icon: <img  style={{height:"35px", width:"35px",marginRight:"4px"}}  src={IMAGES.image1} alt="Student Icon" className="navbar-icon" />,
+            label: <p style={{fontSize:"12px",fontWeight:"bold"}}>Student Management</p>,
+          },
+          { icon: <img  style={{height:"35px", width:"35px",marginRight:"4px"}}  src={IMAGES.image2}   alt="Student Icon" className="navbar-icon" />,label:  <p style={{fontSize:"12px",fontWeight:"bold"}}>Teacher Management</p>},
+          { icon: <img  style={{height:"35px", width:"35px",marginRight:"4px"}}  src={IMAGES.image3} alt="Student Icon" className="navbar-icon" />,label:  <p style={{fontSize:"12px",fontWeight:"bold"}}>Exam Management</p>},
+          { icon: <img   style={{height:"35px", width:"35px",marginRight:"4px"}}  src={IMAGES.image4} alt="Student Icon" className="navbar-icon" />,label:  <p style={{fontSize:"12px",fontWeight:"bold"}}>Announcements </p>},
+          { icon: <img  style={{height:"35px", width:"35px",marginRight:"4px"}}  src={IMAGES.image5}  alt="Student Icon" className="navbar-icon" />, label:  <p style={{fontSize:"12px",fontWeight:"bold"}}>Events</p> },
         ].map((item, index) => (
           <li key={index} className="side-navbar-item">
             <button
               className="side-Navbar-container-heading"
               onClick={() => toggleDropdown(index)}
             >
-              {item}
+              {/* Render the image and text for the first item or just text for others */}
+              {item.icon && <span className="icon-container">{item.icon}</span>}
+              {item.label}
             </button>
 
             <AnimatePresence>

@@ -109,7 +109,7 @@ const Login = () => {
               onClick={() => navigate("/register")}
               style={{ color: "#22C55E", cursor: "pointer" }}
             >
-              Create Authentication
+              Register New user
             </p>
           </form>
         </div>

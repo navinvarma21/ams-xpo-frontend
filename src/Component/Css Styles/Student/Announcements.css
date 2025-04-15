@@ -1,11 +1,5 @@
 /* Announcements */
-.Announcements__title-1_s_and_t {
-    font-size:large;
-   
-    margin-top: 2%;
-    margin-left: 1%;
-  }
-  
+
   /* General styles */
   body {
     font-family: Arial, sans-serif;
@@ -127,4 +121,15 @@
      background-color:#ccc ;/* Gray out disabled buttons*/
      cursor:not-allowed ;/* Change cursor style when disabled*/
   }
-  
+  .Add__Announcements__title-student{
+
+    font-size: 16px;
+    margin-top: 2%;
+    margin-left: 1%;
+    
+  }
+  .Add_Announcements-student{
+    width: 60%;
+    margin-top: 4%;
+    margin-left: 4%;
+  }

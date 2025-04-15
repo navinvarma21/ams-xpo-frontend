@@ -7,9 +7,9 @@
   margin-top: 20px;
 }
 
-.subject-grades__title {
+.subject-grades__title-2 {
   font-size: 24px;
-  
+  margin-right: 57%;
   margin-bottom: 20px;
 }
 
@@ -173,3 +173,8 @@
 
 
 
+.subject-grades__table-header-container-2{
+  margin-left: 19%;
+  width: 100%;
+
+}

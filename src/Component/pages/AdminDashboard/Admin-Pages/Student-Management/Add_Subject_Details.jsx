@@ -1,5 +1,5 @@
 import React from "react";
-
+import IMAGES from "../../../../../Images/images";
 
 function AddSubjectDetails() {
   return (
@@ -14,7 +14,7 @@ function AddSubjectDetails() {
           required
           className="add-subject__input"
         />
-
+        
         <select name="standard" required className="add-subject__input">
           <option value="" disabled selected>
             Select Standard
